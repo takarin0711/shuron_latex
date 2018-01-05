@@ -161,7 +161,7 @@
 \section{複数人で使用可能でどこでも利用できるシステムのコンセプト}
 本章では、
 
-\subsection{新しいシステムのコンセプトの提案}
+\subsection{新しいシステムのコンセプトの提案} \label{concept}
 従来研究では一人で使用をすることを想定していたり、使用できる場所が限定される、持ち運びが難しい、操作が複雑等の問題点があった。
 
 アイデアは一人で深く考えて練ったり生み出すこともあるが、友人との話し合いをしたり、議論をしていくうちにアイデアが生まれることがある。よって複数人で使用できるシステムが必要である。
@@ -215,7 +215,7 @@
 
 \newpage
 \section{システム設計}
-本章ではまず前章で述べた(1)、(2)、(3)を踏まえた上でシステムの全体構成について述べる。その次にそれぞれの機能の設計に関して詳しく説明する。また、ハードウェアは可搬性を考慮して、マイクロソフト社のHoloLens\cite{hololens}を使用する。
+本章ではまず前章の\ref{concept}で述べた(1)、(2)、(3)を踏まえた上でシステムの全体構成について述べる。その次にそれぞれの機能の設計に関して詳しく説明する。また、ハードウェアは可搬性を考慮して、マイクロソフト社のHoloLens\cite{hololens}を使用する。
 
 \subsection{全体構成}
 (1)複数人で話し合って実世界の3D空間上に残したお互いのメモを共有する機能を実現するために、サーバを介して空間を共有する機能が必要である。(2)実世界の広い空間上に任意の場所にメモを置く際には、遠くにあるメモに対して操作する機能が必要である。また、(3)簡単な操作で直感的な様々な入力を可能にするには、3D空間上に描画する機能だけではなく、マルチモーダルな入力が必要となる。以上より、システムの機能としては大きく分けて、メモを入力、メモを操作、メモを共有の三つであり、以下に詳細を述べる(図\ref{fig:system_zentai})。
@@ -230,7 +230,7 @@
 
 \subsection{メモを入力}
 
-\subsubsection{描いて残すメモ}
+\subsubsection{描いて残すメモ} \label{draw_memo}
 \ref{draw_idea}より描いて残すアイデアは、最初に絵と文字に大きく分けることができることは述べた。まず、絵のメモをどうやって残すかについて詳しく説明する。3Dの絵に関しては、タップ＆ホールドを使用して空間上に線を引いて描くようにする(図\ref{fig:3d_draw})。ここで言うタップとは空間上で人差し指と親指を一度つまんで離す動作のことであり、スマートフォンで言えば画面を指で一度タッチする動作のことである。ホールドは人差し指と親指をつまんだ状態を維持することである。ホールドをしている間のみ空間上に線が出るようにして、立体的な絵を描くことができるように実現する。
 
 \begin{figure}[H]
@@ -253,13 +253,23 @@
   \end{center}
 \end{figure}
 
-2Dの文字に関しては、\ref{draw_idea}で述べたように空間上に2Dの文字を残すと見る方向によっては文字が見えないという問題が発生する。この問題の解決策としては、空間上に仮想平面を用意してその平面上に文字を書き、平面ごと相手の方向に向けるという方法を提案する(図\ref{fig:memo_kaiten})。
+2Dの文字に関しては、\ref{draw_idea}で述べたように空間上に2Dの文字を残すと見る方向によっては文字が見えないという問題が発生する。この問題の解決策としては二つ提案する。一つ目は空間上に仮想平面を用意してその平面上に文字を書き、平面ごと相手の方向に向けるという方法を提案する(図\ref{fig:memo_kaiten})。
 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[clip,height=6.0cm,width=8.0cm]{./memo_kaiten.eps}
     \caption{空間上にある2Dの文字のメモは仮想平面ごと回転}
     \label{fig:memo_kaiten}
+  \end{center}
+\end{figure}
+
+二つ目は描いた内容を点の情報として残すという方法を提案する(図\ref{fig:memo_ten})。閲覧する際には点をタップすることによってメモの内容を目の前に表示する。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=10.0cm]{./memo_ten.eps}
+    \caption{点の情報として空間上に残す}
+    \label{fig:memo_ten}
   \end{center}
 \end{figure}
 
@@ -274,7 +284,55 @@
 \end{figure}
 
 \subsubsection{話して残すメモ}
+\ref{speak_idea}より描いて残すアイデアは、最初に絵と文字と感嘆詞に大きく分けることができることは述べた。まず、絵のメモをどうやって残すかについて詳しく説明する。3Dの絵に関しては、「立方体」等と発声することによって目の前に立体の図形を出現させる(図\ref{fig:speak_3d})。2Dの絵に関しては、仮想平面を用意した上で「丸」や「四角形」等と発声することによって平面上に図形を出現させる。
 
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=8.0cm]{./speak_3d.eps}
+    \caption{発声して3Dの図形を表示}
+    \label{fig:speak_3d}
+  \end{center}
+\end{figure}
+
+次に文字のメモをどうやって残すかについて説明をする。テキスト形式のメモに関してはここでは二つ提案する。一つ目は空間上に仮想平面を用意し、その平面上に話した内容を文字として表示する(図\ref{fig:text_memo})。文字の向きの問題については、\ref{draw_memo}で述べた方法と同様の方法を使用して解決をする。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=7.0cm]{./text_memo.eps}
+    \caption{仮想平面を用意してその平面上に話した内容を文字化}
+    \label{fig:text_memo}
+  \end{center}
+\end{figure}
+
+二つ目は話しながら空間上でタップ＆ホールドをして線を引き、話した内容をその線上に文字として表示する(図\ref{fig:text_memo2})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=8.0cm]{./text_memo2.eps}
+    \caption{話しながら線を引いて線上に話した内容を文字化}
+    \label{fig:text_memo2}
+  \end{center}
+\end{figure}
+
+ここで円や曲がった部分に線を引いて線上に文字を残す場合、どうやって表示するかという問題が挙がる。文字を動的に自分または相手の方向にすべて向けてしまうと図\ref{fig:moji_douteki}のようになり、かなり見づらくなってしまう。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=10.0cm]{./moji_douteki.eps}
+    \caption{動的に文字を回転させて表示させた場合}
+    \label{fig:moji_douteki}
+  \end{center}
+\end{figure}
+
+この問題の解決策として二つ提案する。一つ目はタップ＆ホールドをして空間上に描くときに手をひねるようにして向きを変えて、それに合わせて文字の向きも変化させるという方法を提案する。二つ目は自分自身も動きながらタップ＆ホールドをして目の前に描き、そのときの自分の方向に固定して文字を向けるという方法を提案する。例としては、円ならば外側を向くように文字を表示させるようにする(図\ref{fig:moji_seiteki})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=7.0cm]{./moji_seiteki.eps}
+    \caption{円ならば外側に向くように文字を表示}
+    \label{fig:moji_seiteki}
+  \end{center}
+\end{figure}
 
 \subsection{メモを操作}
 
