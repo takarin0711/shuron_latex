@@ -345,7 +345,37 @@
 \end{figure}
 
 \subsection{メモを操作}
+空間上に残したメモをどうやって操作するかについて、以下に近くにあるメモと遠くにあるメモに関してそれぞれ詳しく説明をする。
 
+\subsubsection{近くにあるメモを操作}
+操作に関しては大きく分けると選択、移動、削除に分けることができると考えられる。まず、メモの選択については視線を目の前にあるメモに合わせた状態で、タップをする。そして、タップ＆ホールドを使用して、メモを掴んで自由に移動させる。削除に関しては、メモを選択した状態で新たに目の前に削除ボタンを用意してそれをタップするか、「削除」と発声してメモを削除する。
+
+\subsubsection{遠くにあるメモを操作}
+広い空間上でメモを操作するとき、遠くにあるメモをどうやって操作するかという問題が挙がる。ここでは以下の三つのインタラクションを提案し、それぞれについて詳しく説明する。
+
+\begin{enumerate}[(1)]
+ \item ルームスケールチェンジ
+ \item 3Dラバーバンド
+ \item 3Dフィッシング
+\end{enumerate}
+
+(1)のルームスケールチェンジに関して、広い空間上で遠くにあるメモを操作したいとき、部屋全体の形状のデータと部屋内にあるメモのデータを得る。そして、図\ref{fig:room_shukusho}のように部屋全体の形状の大きさと部屋内のメモの大きさを縮小する。縮小については図\ref{fig:shukusho_temoto}のように手元にバーを用意し、バーを操作することによって大きさを変化させる。最後に、縮小したメモを手元で操作する。このようにして、遠くにあるメモを手元で操作することによって実現する。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=14.0cm]{./room_shukusho.eps}
+    \caption{部屋全体を縮小}
+    \label{fig:room_shukusho}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=16.0cm]{./shukusho_temoto.eps}
+    \caption{手元のバーを操作}
+    \label{fig:shukusho_temoto}
+  \end{center}
+\end{figure}
 
 \subsection{メモを共有}
 
