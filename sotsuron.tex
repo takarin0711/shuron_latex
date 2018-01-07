@@ -359,7 +359,7 @@
  \item 3Dフィッシング
 \end{enumerate}
 
-(1)のルームスケールチェンジに関して、広い空間上で遠くにあるメモを操作したいとき、部屋全体の形状のデータと部屋内にあるメモのデータを得る。そして、図\ref{fig:room_shukusho}のように部屋全体の形状の大きさと部屋内のメモの大きさを縮小する。縮小については図\ref{fig:shukusho_temoto}のように手元にバーを用意し、バーを操作することによって大きさを変化させる。最後に、縮小したメモを手元で操作する。このようにして、遠くにあるメモを手元で操作することによって実現する。
+まず、(1)のルームスケールチェンジについて説明する。広い空間上で遠くにあるメモを操作したいとき、部屋全体の形状のデータと部屋内にあるメモのデータを得る。そして、図\ref{fig:room_shukusho}のように部屋全体の形状の大きさと部屋内のメモの大きさを縮小する。縮小については図\ref{fig:shukusho_temoto}のように手元にバーを用意し、バーを操作することによって大きさを変化させる。最後に、縮小したメモを手元で操作する。このようにして、遠くにあるメモを手元で操作することによって実現する。
 
 \begin{figure}[H]
   \begin{center}
@@ -376,6 +376,41 @@
     \label{fig:shukusho_temoto}
   \end{center}
 \end{figure}
+
+次に(2)の3Dラバーバンドについて説明する。メモを選択する際は、図\ref{fig:3d_rubber_band}のように空間上に残したメモの一覧を目の前にリスト化して表示して選択を行う。空間上にあるメモとリスト内にあるメモは連動している。メモを移動する際には、目の前の移動ボタンをタップした後、図\ref{fig:3d_rubber_band2}のように手元に用意したオブジェクトを操作する。手元のオブジェクトの操作はイメージとしては輪ゴムを引っ張る感覚で引っ張り、引っ張った方向に空間上のメモも連動して移動する(図\ref{fig:3d_rubber_band3}, \ref{fig:3d_rubber_band4})。オブジェクトが中心から離れれば離れるほど移動速度が増し、オブジェクトを離すと中心に戻り、メモも停止する。削除に関してはメモを選択して削除ボタンをタップする。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=14.0cm]{./3d_rubber_band.eps}
+    \caption{目の前にリスト化して表示したものを選択}
+    \label{fig:3d_rubber_band}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=16.0cm]{./3d_rubber_band2.eps}
+    \caption{手元にオブジェクトを用意}
+    \label{fig:3d_rubber_band2}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=7.0cm]{./3d_rubber_band3.eps}
+    \caption{操作のイメージ}
+    \label{fig:3d_rubber_band3}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=6.0cm]{./3d_rubber_band4.eps}
+    \caption{手元のオブジェクトを操作}
+    \label{fig:3d_rubber_band4}
+  \end{center}
+\end{figure}
+
 
 \subsection{メモを共有}
 
