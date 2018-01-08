@@ -439,7 +439,7 @@
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=6.0cm,width=12.0cm]{./3d_fishing4.eps}
+    \includegraphics[clip,height=6.0cm,width=13.0cm]{./3d_fishing4.eps}
     \caption{頭の動きと手元のオブジェクトの回転を利用して移動}
     \label{fig:3d_fishing4}
   \end{center}
@@ -447,6 +447,39 @@
 
 
 \subsection{メモを共有}
+複数人で使用するにはメモを共有できなければならない。以下には対面にいる相手と遠隔にいる相手に共有する方法をそれぞれ説明する。
+
+\subsubsection{対面にいる相手にメモを共有}
+ここでは対面にいる相手にメモを共有する方法について説明する。リアルタイムで空間上に残したメモを共有したい場合、相手側から見ても同じ場所にメモがあるように見えるように座標をサーバに送信して共有を行う(図\ref{fig:sharing_taimen})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=7.0cm]{./sharing_taimen.eps}
+    \caption{同じ場所にメモがあるように見えるように共有}
+    \label{fig:sharing_taimen}
+  \end{center}
+\end{figure}
+
+また、自分が持っているメモの中で見せてもよいメモと見せたくないメモがあることを考慮して、メモはタップするまでは相手には見えないようにする(図\ref{fig:sharing_taimen2})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=8.0cm]{./sharing_taimen2.eps}
+    \caption{見せたいメモだけを共有}
+    \label{fig:sharing_taimen2}
+  \end{center}
+\end{figure}
+
+\subsubsection{遠隔にいる相手にメモを共有}
+ここでは遠隔にいる相手にメモを共有する方法について説明する。リアルタイムでこの場所に残したメモを遠隔にいる相手にも共有したい場合があるとする。リアルタイムでメモの共有を行っている際に、遠隔にいる相手が描いたメモが突然空間に現れるという問題が発生する。そこで、遠隔にいる相手はアバターを表示するという方法を提案する(図\ref{fig:sharing_enkaku})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=8.0cm]{./sharing_enkaku.eps}
+    \caption{遠隔にいる相手にメモを共有}
+    \label{fig:sharing_enkaku}
+  \end{center}
+\end{figure}
 
 
 \newpage
