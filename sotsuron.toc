@@ -6,9 +6,9 @@
 \contentsline {subsection}{\numberline {2.2}従来研究}{6}
 \contentsline {subsubsection}{\numberline {2.2.1}空間上に文字を描く研究}{6}
 \contentsline {subsubsection}{\numberline {2.2.2}実世界の物に関連付けてアイデアを残す研究}{8}
-\contentsline {subsubsection}{\numberline {2.2.3}空間上に描いた情報を複数人に共有する研究}{9}
+\contentsline {subsubsection}{\numberline {2.2.3}複数人で使用することを想定したシステムを開発する研究}{9}
 \contentsline {subsection}{\numberline {2.3}従来研究の問題点}{10}
-\contentsline {section}{\numberline {3}複数人で使用可能でどこでも利用できるシステムのコンセプト}{11}
+\contentsline {section}{\numberline {3}本研究のコンセプト}{11}
 \contentsline {subsection}{\numberline {3.1}新しいシステムのコンセプトの提案}{11}
 \contentsline {subsection}{\numberline {3.2}利用シーン}{11}
 \contentsline {subsection}{\numberline {3.3}様々なアイデアの形}{11}
