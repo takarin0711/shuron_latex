@@ -48,9 +48,9 @@
 		\renewcommand{\thefootnote}{\fnsymbol{footnote}} 
 		{\Large 田 野 研 究 室} 
 		\vspace{3ex} \\ 
-		{\Large 指導教員 : 田 野 \ 俊 一 ({\em Tano Shun'ichi})} 
+		{\Large 指導教員 : 田 野 \ 俊 一} 
 		\vspace{3ex} \\
-		{\Large 学籍番号 : 1630012 \ / \ 猪 膝 \ 孝 之 ({\em Inohiza Takayuki})} 
+		{\Large 学籍番号 : 1630012 \ / \ 猪 膝 \ 孝 之} 
 		\vspace{5ex} \\ 
 		{\Large 提出日 : 平成 30 年 1 月 29 日 ( 火 )} 
 		\vspace{-5ex} \\ 
@@ -108,6 +108,16 @@
   \end{center}
 \end{figure}
 
+Agrawalら\cite{agrawal}は携帯電話が内蔵している加速度計を使用して人間の筆跡を認識するPhonePoint Penというシステムを開発した(図\ref{fig:phonepointpen})。手のジェスチャによる加速度は、幾何学的なストロークに変換されて、文字として認識される。携帯電話をペンのように持って描くことで、ユーザーは短いメッセージを書くことができ、簡単な図形を空中に描くことが可能になった。プロトタイプの評価実験を行った結果より英語の文字を平均91.9\%の精度で識別できることがわかった。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=6.0cm]{./phonepointpen.eps}
+    \caption{PhonePoint Pen}
+    \label{fig:phonepointpen}
+  \end{center}
+\end{figure}
+
 また、近年の研究ではSunら\cite{sun}は携帯端末からのWi-Fi信号を利用してハンズフリーでの描画を可能にするWiDrawを作成した。従来の研究では、ユーザーがワイヤレストランスミッタを保持する必要があるか、カスタムワイヤレスハードウェアを必要とするか、事前定義されたハンドジェスチャのみを決定する必要があったが、この研究ではウェアラブルデバイスを必要としない、W-iFiカードを使用した初めてのモーショントラッキングシステムを開発した(図\ref{fig:widraw})。
 
 \begin{figure}[H]
@@ -149,6 +159,16 @@
 \end{figure}
 
 \subsubsection{複数人で使用することを想定したシステムを開発する研究}
+Bast\'ea-Forteら\cite{bastea}は共有キャンバスを用いてブレインストーミングを支援する共同スケッチシステムを開発した(図\ref{fig:collaborative_sketch})。共有スケッチの閾値を下げることですべてのメンバーからのアイデアの生成が増えて、他のメンバーのアイデアを構築できると考えてこのシステムを開発した。このシステムを利用することで、デジタルホワイトボードを用いた共有キャンバス上で各ユーザがタブレットPCで描写したスケッチの共有が可能になった。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=6.0cm]{./collaborative_sketch.eps}
+    \caption{共同スケッチシステム}
+    \label{fig:collaborative_sketch}
+  \end{center}
+\end{figure}
+
 友広ら\cite{tomohiro}はタブレットPCとデプス(depth)カメラを用いてプロトタイプのスケッチインタフェースを開発した(図\ref{fig:3dsketch})。スケッチは情報記録、共有、そしてアイデアの発想のためのツールとして使用されている。2Dのスケッチを描くことと同様に3Dのスケッチが描くことが可能になれば、裏面の凹凸情報を複数視点から描かなくても状況の理解が促すことができると考えてこのシステムを作成した。
 
 \begin{figure}[H]
@@ -594,12 +614,14 @@
 pp.39-40(1999).
   \bibitem{siio2} 椎尾, 山本: コミュニケーションツールのための簡易型AR システム; コンピュータソフトウェア, Vol.19,
 No.4, pp.246-253(2002).
-  \bibitem{sun} Li Sun, Souvik Sen, Dimitrios Koutsonikolas, Kyu-Han Kim: WiDraw: Enabling Hands-free Drawing in the Air on Commodity WiFi Devices; Proceeding MobiCom '15 Proceedings of the 21st Annual International Conference on Mobile Computing and Networking, pp77-89(2015).
+  \bibitem{agrawal} Sandip Agrawal, Ionut Constandache, Shravan Gaonkar, Romit Roy Choudhury, Kevin Caves and Frank DeRuyter: Using mobile phones to write in air; Proceedings of the 9th international conference on Mobile systems, applications, and services(MobiSys '11), pp.15–28(2011).
+  \bibitem{sun} Li Sun, Souvik Sen, Dimitrios Koutsonikolas and Kyu-Han Kim: WiDraw: Enabling Hands-free Drawing in the Air on Commodity WiFi Devices; Proceedings of the 21st Annual International Conference on Mobile Computing and Networking(MobiCom '15), pp77-89(2015).
   \bibitem{tano} 高山, 瑞慶山, 田野, 岩田, 橋山: 実世界コンテキスト・情報を用いたユビキタスインフォーマルコミュニケーションの実装と評価; ヒューマンインタフェースシンポジウム2005, pp.955-958(2005).
   \bibitem{tano2} Tano, S., Takayama, T., Iwata, M. and Hashiyama, T.: Wearable Computer for Ubiquitous Informal Communication; Sixth International Workshop on Smart Appliances and Wearable Computing-IWSAWC 2006-(at 26th IEEE International Conference on Distributed Computing Systems
 ICDCS), pp.1-8(2006).
-  \bibitem{yoshino} 吉野, 松原: 実世界のモノと関連づけたアイデアの共有による発想支援システム「ものぴこん」の開発と評価, マルチメディア, 分散, 協調とモバイルシンポジウム(DICOMO2013), pp599-607(2013)
-  \bibitem{tomohiro} 友広, 角, 松村: 凹凸情報を持つ写真をキャンバスとした立体スケッチシステム, 第22回インタラクティブシステムとソフトウェアに関するワークショップ(WISS 2014), 1A-10, 2014
+  \bibitem{yoshino} 吉野, 松原: 実世界のモノと関連づけたアイデアの共有による発想支援システム「ものぴこん」の開発と評価, マルチメディア, 分散, 協調とモバイルシンポジウム(DICOMO2013), pp599-607(2013).
+  \bibitem{bastea} 	Marcello Bast\'ea-Forte, Corina Yen: Encouraging contribution to shared sketches in brainstorming meeting; In CHI '07 Extended Abstracts on Human Factors in Computing Systems, pp2267-2272(2007). 
+  \bibitem{tomohiro} 友広, 角, 松村: 凹凸情報を持つ写真をキャンバスとした立体スケッチシステム, 第22回インタラクティブシステムとソフトウェアに関するワークショップ(WISS 2014), 1A-10(2014).
   \bibitem{nagata} 長田, 佐々木, 島田, 佐藤: スマートグラスを用いた仮想空間への手書き情報共有システム; 情報処理学会第77 回全国大会論文集, 3-205, 206(2015).
   \bibitem{hololens} Microsoft Inc: HoloLens; \textless\url{https://www.microsoft.com/ja-jp/hololens}\textgreater2018年1月2日アクセス.
 \end{thebibliography}
