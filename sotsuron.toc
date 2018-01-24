@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.3}従来研究の問題点}{10}
 \contentsline {section}{\numberline {3}本研究のコンセプト}{11}
 \contentsline {subsection}{\numberline {3.1}新しいシステムのコンセプトの提案}{11}
-\contentsline {subsection}{\numberline {3.2}文字を表示する上での問題点}{12}
+\contentsline {subsection}{\numberline {3.2}文字を表示する上での問題点と解決案}{12}
 \contentsline {subsection}{\numberline {3.3}様々なアイデアの形}{13}
 \contentsline {subsubsection}{\numberline {3.3.1}描いて残すアイデア}{13}
 \contentsline {subsubsection}{\numberline {3.3.2}話して残すアイデア}{13}
