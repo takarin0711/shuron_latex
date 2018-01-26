@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  26 JAN 2018 02:47
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.7.9)  26 JAN 2018 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -275,15 +275,15 @@ LaTeX Info: Redefining \not on input line 1043.
 \lst@maxwidth=\dimen141
 
 (c:/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box53
 )
 (c:/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
 (c:/texlive/2013/texmf-dist/tex/latex/listings/jlisting.sty
 Package: jlisting 2006/02/20 0.2 (Thor)
@@ -717,8 +717,8 @@ Overfull \hbox (2.08049pt too wide) in paragraph at lines 654--668
 File: ./task4.eps Graphic file (type eps)
 <./task4.eps> [34] [35] [36]
 File: ./task5.eps Graphic file (type eps)
- <./task5.eps> [37]
-Overfull \hbox (60.82709pt too wide) in paragraph at lines 777--834
+ <./task5.eps> [37] [38]
+Overfull \hbox (60.82709pt too wide) in paragraph at lines 809--866
  [] 
  []
 
@@ -726,27 +726,27 @@ Overfull \hbox (60.82709pt too wide) in paragraph at lines 777--834
 Overfull \vbox (16.55981pt too high) has occurred while \output is active []
 
 
-[38] [39] [40]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 852.
+[39] [40] [41]
+LaTeX Font Info:    Try loading font information for OML+txr on input line 884.
 
  (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 852.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 884.
 
 Missing character: There is no ^^e2 in font txr!
 Missing character: There is no ^^80 in font txr!
 Missing character: There is no ^^93 in font txr!
 
-[41] (./sotsuron.aux) ) 
+[42] (./sotsuron.aux) ) 
 Here is how much of TeX's memory you used:
- 7542 strings out of 494001
- 104177 string characters out of 6157278
- 177173 words of memory out of 5000000
- 10787 multiletter control sequences out of 15000+600000
+ 7543 strings out of 494001
+ 104197 string characters out of 6157278
+ 180184 words of memory out of 5000000
+ 10788 multiletter control sequences out of 15000+600000
  28716 words of font info for 102 fonts, out of 8000000 for 9000
  745 hyphenation exceptions out of 8191
  42i,12n,40p,1009b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (42 pages, 127224 bytes).
+Output written on sotsuron.dvi (43 pages, 137228 bytes).
