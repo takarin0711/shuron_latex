@@ -557,6 +557,57 @@ Bast\'ea-Forteら\cite{bastea}は共有キャンバスを用いてブレイン�
 
 \newpage
 \section{プロトタイプシステムの実装}
+本章では、設計したシステムを基に行ったプロトタイプシステムの実装について述べる。
+
+\subsection{プロトタイプシステムの構成}
+設計されたシステムは、ユーザがシステムの各機能を利用するために使うアプリケーションと、HoloLens同士で相互接続するためのサーバ、ユーザが喋った内容をテキストに変換するクラウドサービスが存在する。図\ref{fig:prototypesystem}にプロトタイプシステムの全体図を示す。以下でそれぞれについて述べる。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=14.0cm]{./prototypesystem.eps}
+    \caption{プロトタイプシステムの構成}
+    \label{fig:prototypesystem}
+  \end{center}
+\end{figure}
+
+\subsubsection{アプリケーション}
+Windows 10やWindows 10 Mobile上で動作するUWP（Universal Windows Platform）アプリとして作成すると、HoloLens上でもそのアプリケーションが動作する。アプリケーションの開発には、マイクロソフト社が配布している統合開発環境であるVisual Studio 2017\cite{visualstudio}(Ver 15.0)と、ユニティ・テクノロジーズ社が配布している統合開発環境を内蔵した複数のプラットホームに対応するゲームエンジンであるUnity\cite{unity}(Ver 5.6.2f1)を使用した。また、Unity 用のHoloLens 向けのツールキットであるHoloToolkit-Unity\cite{holotoolkit}の導入を行った。開発言語には、Windows向けのアプリケーションの開発に主に使われるC\#を採用した。
+
+\subsubsection{サーバ}
+実世界の任意の空間上に残したメモを他のHoloLensを使用している人に共有するには、HoloToolkitのSharing\cite{sharing}という機能を利用し、Sharing用のサーバを介して空間の共有を行った。HoloLensの座標系は特殊であり、このまま共有をしても現実の空間の同じ位置で物体を共有することはできないという問題が発生する。この問題を解決するためにはアンカーの共有を行った(図\ref{fig:sharing})。アンカーとは船の錨の意味で空間内の絶対的な位置に居座ることができるオブジェクトのことである。これを設置することで位置合わせを行い、実世界の任意の空間上に残したメモの共有を行った。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=10.0cm,width=14.0cm]{./sharing.eps}
+    \caption{アンカーを設置して座標の位置合わせを行い共有}
+    \label{fig:sharing}
+  \end{center}
+\end{figure}
+
+\subsubsection{クラウドサービス}
+HoloLensの標準機能で音声入力はサポートされているが、現在利用できる言語が英語のみである\cite{emuniwa}。そこでGoogle Cloud Speech API\cite{google_speech}を利用することにより、日本語の音声をテキストに変換する(図\ref{fig:googlespeech})。Google Cloud Speech APIとはGoogleの持つ音声認識技術を使用し、音声をテキストに変換するサービスである。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=14.0cm]{./googlespeech.eps}
+    \caption{日本語の音声をテキストに変換}
+    \label{fig:googlespeech}
+  \end{center}
+\end{figure}
+
+\subsection{プロトタイプの実装}
+
+\subsubsection{全体構成}
+
+\subsubsection{3D描画モード}
+
+\subsubsection{付箋モード}
+
+\subsubsection{Voice Lineモード}
+
+\subsubsection{首振りモード}
+
+\subsection{プロトタイプのデモンストレーション}
 
 \newpage
 \section{プロトタイプの評価実験}
@@ -905,6 +956,12 @@ ICDCS), pp.1-8(2006).
   \bibitem{bastea} 	Marcello Bast\'ea-Forte, Corina Yen: Encouraging contribution to shared sketches in brainstorming meeting; In CHI '07 Extended Abstracts on Human Factors in Computing Systems, pp2267-2272(2007). 
   \bibitem{tomohiro} 友広, 角, 松村: 凹凸情報を持つ写真をキャンバスとした立体スケッチシステム, 第22回インタラクティブシステムとソフトウェアに関するワークショップ(WISS 2014), 1A-10(2014).
   \bibitem{nagata} 長田, 佐々木, 島田, 佐藤: スマートグラスを用いた仮想空間への手書き情報共有システム; 情報処理学会第77 回全国大会論文集, 3-205, 206(2015).
-  \bibitem{hololens} Microsoft Inc: HoloLens; \textless\url{https://www.microsoft.com/ja-jp/hololens}\textgreater2018年1月2日アクセス.
+  \bibitem{hololens} Microsoft Inc.: HoloLens; \textless\url{https://www.microsoft.com/ja-jp/hololens}\textgreater2018年1月2日アクセス.
+  \bibitem{visualstudio} Microsoft Inc.; Visual Studio 2017: \textless\url{https://docs.microsoft.com/ja-jp/visualstudio/}\textgreater2018年1月27日アクセス.
+  \bibitem{unity} Unity Technologies Inc: Unity;  \textless\url{https://unity3d.com/jp/unity}\textgreater2018年1月27日アクセス.
+  \bibitem{holotoolkit} Microsoft Inc: HoloToolkit-Unity; \textless\url{https://github.com/Microsoft/HoloToolkit-Unity}\textgreater2018年1月27日アクセス.
+  \bibitem{sharing} HoloToolkit-Unity のSharing の仕組みをできるだけ簡単に理解する; \textless\url{http://qiita.com/miyaura/items/da1d7bd253c3299327ba}\textgreater2018年1月27日アクセス.
+  \bibitem{emuniwa} HoloLensで言霊を撃ってみよう;  \textless\url{https://atl-hiroo.recruit-tech.co.jp/showcase/archives/474}\textgreater2018年1月27日アクセス.
+  \bibitem{google_speech} Google Inc.: Google Cloud Speech API; \textless\url{https://cloud.google.com/speech/?hl=ja}\textgreater2018年1月27日アクセス.
 \end{thebibliography}
 \end{document}
