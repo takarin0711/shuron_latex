@@ -647,10 +647,26 @@ HoloLensの標準機能で音声入力はサポートされているが、現在
 ここではプロトタイプシステムの実装について詳しく述べる。
 
 \subsubsection{全体構成}
-アプリケーションを起動後、目の前に表示されるリストから機能をタップして選択を行う。プロトタイプシステムの機能は全てで4つであり、以下に詳しく説明を行う。
+アプリケーションを起動後、目の前に表示されるリストから機能をタップして選択を行う(図\ref{fig:scenelauncher})。プロトタイプシステムの機能は全てで4つである(図\ref{fig:senizu})。機能を選択後は音声入力またはキーボードを使用してメニュー画面に戻ることができる。以下に詳しく説明を行う。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=12.0cm]{./scenelauncher.eps}
+    \caption{メニュー画面}
+    \label{fig:scenelauncher}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=6.0cm,width=12.0cm]{./senizu.eps}
+    \caption{システムの遷移図}
+    \label{fig:senizu}
+  \end{center}
+\end{figure}
 
 \subsubsection{3D描画モード}
-まずメッシュが手に追従するものを作成した。ここでは3D ObjectとしてCubeを追加した。次にSpatialMappingとInputManagerを追加し、カメラをデフォルトのものからHoloLendsCameraに変更した。次に手の検出や位置を受け取るスクリプトを作成し、手の検出と手の状態を保持できるようにし、手の位置を取得をできるようにした。加えて、手の位置にオブジェクトを追従させるようにした。TrailRenderer\cite{trailrenderer}というオブジェクトが動く際に、オブジェクトの後ろに軌跡を作るスクリプトを使用し、3D空間上に複数の線の軌跡を描画できるようにした。最後にCubeを透明にする処理を行った。また、線を共有するためにタップをしたかどうかのフラグとタップ＆ホールド中の三次元座標のデータをサーバに送る処理を行った。受信する際は座標データ同士を全て線で繋ぐ処理をLineRenderer\cite{linerenderer}というスクリプトを使用して行った。
+まずメッシュが手に追従するものを作成した。ここでは3D ObjectとしてCubeを追加した。次にSpatialMappingとInputManagerを追加し、カメラをデフォルトのものからHoloLendsCameraに変更した。次に手の検出や位置を受け取るスクリプトを作成し、手の検出と手の状態を保持できるようにし、手の位置を取得をできるようにした。加えて、手の位置にオブジェクトを追従させるようにした。TrailRenderer\cite{trailrenderer}というオブジェクトが動く際に、オブジェクトの後ろに軌跡を作るスクリプトを使用し、3D空間上に複数の線の軌跡を描画できるようにした。最後にCubeを透明にする処理を行った。また、線を共有するためにタップをしたかどうかのフラグとタップ＆ホールド中の三次元座標のデータをサーバに送る処理を行った。受信する際は受け取った座標データ同士を全て線で繋ぐ処理をLineRenderer\cite{linerenderer}というスクリプトを使用して行った。自分が描いた線を音声入力またはキーボード入力で削除できるように実装した。削除した場合はサーバに送信する処理を行った。
 
 操作方法としては、3D空間上で目の前でタップ＆ホールドをすると描画が開始され、ホールドを解除すると描画をやめる。図\ref{fig:3ddraw}のように3D空間上に立体の図形を描いて表示することができる。
 
@@ -663,6 +679,51 @@ HoloLensの標準機能で音声入力はサポートされているが、現在
 \end{figure}
 
 \subsubsection{付箋モード}
+まず、貼り付けるための壁を生成するためにSpatialMappingを追加し、メッシュを取り除いた平面へと変換処理を行った。次にInputManagerを追加し、吹き出しオブジェクトを追加し、そのオブジェクトに目線カーソルを合わせた状態でタップ＆ホールドをしている間は、音声を拾うように実装した(図\ref{fig:hukidashi})。音声を拾うことができたら音声はクラウドのほうに送信され、テキストとして変換されて返ってくる。目の前に付箋オブジェクトを自動で生成し、そのテキストを貼り付けるようにした(図\ref{fig:sticky_input})。その付箋を目線カーソルで合わせた状態でタップを行うと、三次元座標のデータとテキストデータをサーバに送る処理を行った(図\ref{fig:sticky_share})。テキストのデータはString型のまま送信を行うと、日本語の場合相手側のほうで文字化けをしてしまうという問題が発生してしまうため、String型のデータをbyte型配列のデータに変換する処理を行った。受信をする際には、byte型配列のテキストデータをString型に変換する処理をして、送られてきた三次元座標のデータの場所に付箋オブジェクトを生成し、その付箋にテキストを貼り付けるようにした。空間上の付箋オブジェクトにBillboardというスクリプトを紐づけして目線カーソルを合わせたら自分の方向に常に回転して向くようにした。
+
+移動に関してタップ＆ホールドで動かすことができるように付箋オブジェクトにHandDraggableというスクリプトの紐づけを行った。また、移動の共有を行うためにタップ＆ホールドをしている間は三次元座標のデータをサーバに送信する処理を行った。受信する際は座標データを受け取って移動の共有の実現を行った。壁に貼り付ける処理はHandDraggableスクリプトの中身を改変し、付箋オブジェクトが壁等の平面に接触したときに、接触した場所の座標に固定して、平面の法線ベクトルの方向に付箋オブジェクトの向きを固定して少し平面から浮かせる処理を行った。また、壁の貼り付けたことを共有するために付箋オブジェクトの三次元座標のデータと向きのデータをサーバに送信する処理を行った。受信をする際には付箋オブジェクトを受け取った座標データの場所に固定して、向きのデータの方向に回転して固定する処理を行った。また、貼り付けた付箋を壁からの角度が50度未満、つまりある程度横から見ると目の前に新たに付箋オブジェクトが表示されるような処理を行った(図\ref{fig:wall_yoko})。目の前に表示された付箋オブジェクトは貼り付けた付箋オブジェクトのテキストデータと同じものが表示されるようにした。貼り付けた付箋を壁からの角度が50度以上、つまり正面から見るとそのままで、目の前にすでに付箋オブジェクトが表示されている場合は削除する処理を行った(図\ref{fig:wall_mae})。
+
+付箋オブジェクトの削除に関しては、目線カーソルを合わせた状態で音声入力またはキーボード入力をすることで削除できるように実装した。共有した付箋を削除した場合はサーバに送信する処理を行った。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=10.0cm]{./hukidashi.eps}
+    \caption{吹き出しオブジェクト}
+    \label{fig:hukidashi}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=10.0cm]{./sticky_input.eps}
+    \caption{付箋オブジェクトを表示}
+    \label{fig:sticky_input}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=10.0cm]{./sticky_share.eps}
+    \caption{付箋オブジェクトを共有}
+    \label{fig:sticky_share}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=10.0cm]{./wall_mae.eps}
+    \caption{正面から見た場合}
+    \label{fig:wall_mae}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=7.0cm,width=10.0cm]{./wall_yoko.eps}
+    \caption{ある程度横から見た場合}
+    \label{fig:wall_yoko}
+  \end{center}
+\end{figure}
 
 \subsubsection{Voice Lineモード}
 

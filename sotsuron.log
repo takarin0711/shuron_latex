@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  28 JAN 2018 16:49
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  28 JAN 2018 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,27 +699,43 @@ File: ./googlespeech.eps Graphic file (type eps)
 File: ./apikey.eps Graphic file (type eps)
 
 <./apikey.eps> [34]
+File: ./scenelauncher.eps Graphic file (type eps)
+ <./scenelauncher.eps>
+File: ./senizu.eps Graphic file (type eps)
+ <./senizu.eps> [35]
 File: ./3ddraw.eps Graphic file (type eps)
- <./3ddraw.eps> [35]
+ <./3ddraw.eps>
+[36]
+File: ./hukidashi.eps Graphic file (type eps)
+ <./hukidashi.eps>
+File: ./sticky_input.eps Graphic file (type eps)
+ <./sticky_input.eps>
+File: ./sticky_share.eps Graphic file (type eps)
+ <./sticky_share.eps> [37]
+File: ./wall_mae.eps Graphic file (type eps)
+
+<./wall_mae.eps>
+File: ./wall_yoko.eps Graphic file (type eps)
+ <./wall_yoko.eps> [38] [39]
 File: ./jikken_kankyo.eps Graphic file (type eps)
  <./jikken_kankyo.eps>
 File: ./jikkenchu.eps Graphic file (type eps)
 
-<./jikkenchu.eps> [36]
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 727.
+<./jikkenchu.eps> [40]
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 788.
 
  (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 727.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 788.
 File: ./hoshi.eps Graphic file (type eps)
-<./hoshi.eps> [37]
+<./hoshi.eps> [41]
 File: task1.eps Graphic file (type eps)
  <task1.eps>
 File: task2.eps Graphic file (type eps)
  <task2.eps>
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 748--762
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 809--823
 []$[]$ $[]$ 
  []
 
@@ -727,38 +743,38 @@ File: task2_2.eps Graphic file (type eps)
 <task2_2.eps>
 File: task3.eps Graphic file (type eps)
  <task3.eps>
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 765--779
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 826--840
 []$[]$ $[]$ 
  []
 
 File: ./task4.eps Graphic file (type eps)
-<./task4.eps> [38] [39] [40]
+<./task4.eps> [42] [43] [44]
 File: ./task5.eps Graphic file (type eps)
- <./task5.eps> [41] [42]
+ <./task5.eps> [45] [46]
 File: ./draw_maru.eps Graphic file (type eps)
- <./draw_maru.eps> [43]
+ <./draw_maru.eps> [47]
 File: ./draw_star.eps Graphic file (type eps)
 
 <./draw_star.eps>
 File: ./okane.eps Graphic file (type eps)
- <./okane.eps> [44]
+ <./okane.eps> [48]
 File: ./stone.eps Graphic file (type eps)
  <./stone.eps>
 File: ./takaoka.eps Graphic file (type eps)
- <./takaoka.eps> [45]
+ <./takaoka.eps> [49]
 File: ./rakka.eps Graphic file (type eps)
 
-<./rakka.eps> [46]
+<./rakka.eps> [50]
 File: ./theworld.eps Graphic file (type eps)
  <./theworld.eps>
 File: ./zetubou.eps Graphic file (type eps)
- <./zetubou.eps> [47]
+ <./zetubou.eps> [51]
 File: ./gion.eps Graphic file (type eps)
  <./gion.eps>
 File: ./akarui.eps Graphic file (type eps)
 
-<./akarui.eps> [48] [49] [50]
-Overfull \hbox (60.82709pt too wide) in paragraph at lines 1027--1084
+<./akarui.eps> [52] [53] [54]
+Overfull \hbox (60.82709pt too wide) in paragraph at lines 1088--1145
  [] 
  []
 
@@ -766,70 +782,70 @@ Overfull \hbox (60.82709pt too wide) in paragraph at lines 1027--1084
 Overfull \vbox (16.55981pt too high) has occurred while \output is active []
 
 
-[51] [52] [53] [54]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 1128
+[55] [56] [57] [58]
+LaTeX Font Info:    Try loading font information for OML+txr on input line 1189
 .
  (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1128
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1189
 .
 Missing character: There is no ^^e2 in font txr!
 Missing character: There is no ^^80 in font txr!
 Missing character: There is no ^^93 in font txr!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
 []\OT1/txr/m/n/10.95 Microsoft Inc.; Vi-sual Stu-dio 2017: \OML/txmi/m/it/10.95
  <$\OT1/txtt/m/n/10.95 https : / / docs . microsoft . com / ja-[]jp /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
 []\OT1/txr/m/n/10.95 Microsoft Inc: HoloToolkit-Unity; \OML/txmi/m/it/10.95 <$\
 OT1/txtt/m/n/10.95 https : / / github . com / Microsoft /
  []
 
-[55]
-Underfull \hbox (badness 2512) in paragraph at lines 1148--1149
+[59]
+Underfull \hbox (badness 2512) in paragraph at lines 1209--1210
 []\OT1/txr/m/n/10.95 HoloLens \JY1/hmc/m/n/10.95 で言霊を撃 ってみよう\OT1/txr/
 m/n/10.95 ; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 https : / / atl-[]hiroo 
 . recruit-[]tech . co . jp / showcase /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
 \OT1/txtt/m/n/10.95 com / codelabs / cloud-[]speech-[]intro-[]ja / index . html
  ? index = . . \ % 2F . . \ %2Fgcp-[]next-[]tok \
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 1151--1152
+Underfull \hbox (badness 7944) in paragraph at lines 1212--1213
 []\OT1/txr/m/n/10.95 Google Cloud Speech Recog-ni-tion; \OML/txmi/m/it/10.95 <$
 \OT1/txtt/m/n/10.95 https : / / assetstore . unity . com / packages / tools /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
 []\OT1/txr/m/n/10.95 TrailRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / docs . unity3d . com / ja / 540 / ScriptReference / TrailRenderer .
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
 []\OT1/txr/m/n/10.95 LineRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 h
 ttps : / / docs . unity3d . com / ja / 540 / ScriptReference / LineRenderer .
  []
 
-[56] (./sotsuron.aux) ) 
+[60] (./sotsuron.aux) ) 
 Here is how much of TeX's memory you used:
- 7607 strings out of 494001
- 105047 string characters out of 6157278
- 181173 words of memory out of 5000000
- 10834 multiletter control sequences out of 15000+600000
+ 7628 strings out of 494001
+ 105366 string characters out of 6157278
+ 182173 words of memory out of 5000000
+ 10848 multiletter control sequences out of 15000+600000
  28716 words of font info for 102 fonts, out of 8000000 for 9000
  745 hyphenation exceptions out of 8191
- 42i,12n,40p,1009b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,40p,1222b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (57 pages, 186232 bytes).
+Output written on sotsuron.dvi (61 pages, 197244 bytes).
