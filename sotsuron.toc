@@ -36,14 +36,16 @@
 \contentsline {subsubsection}{\numberline {5.2.2}3D描画モード}{35}
 \contentsline {subsubsection}{\numberline {5.2.3}付箋モード}{36}
 \contentsline {subsubsection}{\numberline {5.2.4}Voice Lineモード}{39}
-\contentsline {subsubsection}{\numberline {5.2.5}首振りモード}{39}
-\contentsline {section}{\numberline {6}プロトタイプの評価実験}{40}
-\contentsline {subsection}{\numberline {6.1}実験の目的}{40}
-\contentsline {subsection}{\numberline {6.2}実験の被験者}{40}
-\contentsline {subsection}{\numberline {6.3}実験環境}{40}
-\contentsline {subsection}{\numberline {6.4}実験方法}{41}
-\contentsline {subsubsection}{\numberline {6.4.1}準備}{41}
-\contentsline {subsubsection}{\numberline {6.4.2}シナリオ実験}{42}
-\contentsline {subsubsection}{\numberline {6.4.3}課題解決実験}{45}
-\contentsline {subsection}{\numberline {6.5}実験結果と考察}{46}
-\contentsline {section}{\numberline {7}おわりに}{57}
+\contentsline {subsubsection}{\numberline {5.2.5}首振りモード}{40}
+\contentsline {section}{\numberline {6}プロトタイプの評価実験}{41}
+\contentsline {subsection}{\numberline {6.1}実験の目的}{41}
+\contentsline {subsection}{\numberline {6.2}実験の被験者}{41}
+\contentsline {subsection}{\numberline {6.3}実験環境}{41}
+\contentsline {subsection}{\numberline {6.4}実験方法}{42}
+\contentsline {subsubsection}{\numberline {6.4.1}準備}{42}
+\contentsline {subsubsection}{\numberline {6.4.2}シナリオ実験}{43}
+\contentsline {subsubsection}{\numberline {6.4.3}課題解決実験}{46}
+\contentsline {subsection}{\numberline {6.5}実験結果と考察}{47}
+\contentsline {section}{\numberline {7}おわりに}{58}
+\contentsline {subsection}{\numberline {7.1}本研究のまとめ}{58}
+\contentsline {subsection}{\numberline {7.2}今後の課題}{58}
