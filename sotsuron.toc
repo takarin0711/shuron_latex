@@ -46,4 +46,4 @@
 \contentsline {subsubsection}{\numberline {6.4.2}シナリオ実験}{38}
 \contentsline {subsubsection}{\numberline {6.4.3}課題解決実験}{41}
 \contentsline {subsection}{\numberline {6.5}実験結果と考察}{42}
-\contentsline {section}{\numberline {7}おわりに}{51}
+\contentsline {section}{\numberline {7}おわりに}{53}

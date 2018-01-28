@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  28 JAN 2018 06:58
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  28 JAN 2018 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,8 +757,8 @@ File: ./gion.eps Graphic file (type eps)
  <./gion.eps>
 File: ./akarui.eps Graphic file (type eps)
 
-<./akarui.eps> [48] [49]
-Overfull \hbox (60.82709pt too wide) in paragraph at lines 1015--1072
+<./akarui.eps> [48] [49] [50]
+Overfull \hbox (60.82709pt too wide) in paragraph at lines 1027--1084
  [] 
  []
 
@@ -766,67 +766,63 @@ Overfull \hbox (60.82709pt too wide) in paragraph at lines 1015--1072
 Overfull \vbox (16.55981pt too high) has occurred while \output is active []
 
 
-[50] [51] [52]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 1090
+[51] [52] [53] [54]
+LaTeX Font Info:    Try loading font information for OML+txr on input line 1128
 .
  (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1090
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1128
 .
 Missing character: There is no ^^e2 in font txr!
 Missing character: There is no ^^80 in font txr!
 Missing character: There is no ^^93 in font txr!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1106--1107
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
 []\OT1/txr/m/n/10.95 Microsoft Inc.; Vi-sual Stu-dio 2017: \OML/txmi/m/it/10.95
  <$\OT1/txtt/m/n/10.95 https : / / docs . microsoft . com / ja-[]jp /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
 []\OT1/txr/m/n/10.95 Microsoft Inc: HoloToolkit-Unity; \OML/txmi/m/it/10.95 <$\
 OT1/txtt/m/n/10.95 https : / / github . com / Microsoft /
  []
 
-[53]
-Underfull \hbox (badness 2512) in paragraph at lines 1110--1111
+[55]
+Underfull \hbox (badness 2512) in paragraph at lines 1148--1149
 []\OT1/txr/m/n/10.95 HoloLens \JY1/hmc/m/n/10.95 で言霊を撃 ってみよう\OT1/txr/
 m/n/10.95 ; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 https : / / atl-[]hiroo 
 . recruit-[]tech . co . jp / showcase /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
 \OT1/txtt/m/n/10.95 com / codelabs / cloud-[]speech-[]intro-[]ja / index . html
  ? index = . . \ % 2F . . \ %2Fgcp-[]next-[]tok \
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 1113--1114
+Underfull \hbox (badness 7944) in paragraph at lines 1151--1152
 []\OT1/txr/m/n/10.95 Google Cloud Speech Recog-ni-tion; \OML/txmi/m/it/10.95 <$
 \OT1/txtt/m/n/10.95 https : / / assetstore . unity . com / packages / tools /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1115
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1153
 []\OT1/txr/m/n/10.95 TrailRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / docs . unity3d . com / ja / 540 / ScriptReference / TrailRenderer .
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
+Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
 []\OT1/txr/m/n/10.95 LineRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 h
 ttps : / / docs . unity3d . com / ja / 540 / ScriptReference / LineRenderer .
  []
 
-[54] (./sotsuron.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[56] (./sotsuron.aux) ) 
 Here is how much of TeX's memory you used:
  7607 strings out of 494001
  105047 string characters out of 6157278
@@ -836,4 +832,4 @@ Here is how much of TeX's memory you used:
  745 hyphenation exceptions out of 8191
  42i,12n,40p,1009b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (55 pages, 176184 bytes).
+Output written on sotsuron.dvi (57 pages, 186232 bytes).
