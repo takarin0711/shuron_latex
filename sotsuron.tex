@@ -89,7 +89,7 @@
 
 \newpage
 \section{研究背景と従来研究}
-本章では、2.1節にて研究の背景を、
+本章では、研究の背景と従来研究について述べる。
 
 \subsection{研究の背景}
 アイデアはふとしたときに思い浮かぶことがあり、私達はそれを紙に書き留めたり、PCやスマートフォン等を利用してメモを取ることがある。しかし、アイデアが思い浮かぶのは座って作業しているときだけでなく、外で歩いているときや、机やホワイトボード等がないような場面でも突然思い浮かぶことがある。紙とペンを持ち歩いて思い浮かんだらすぐにメモを取る習慣ができてる人はいいが、そうでない人はアイデアが思い浮かんでも「後でメモをすればいいや」と思ってすぐにメモを取ることを諦めてしまうだろう。実際に日頃からアイデアをメモに記録している人は少なくなってきている傾向がある\cite{memo}。思い浮かんだアイデアはできるだけ早くメモを取ったほうが良い。また、アイデアは一人で考えて生み出すものとは限らない。友人との話し合いをしているうちに一人では思いつかなかったアイデアが生まれたり、話が弾んで連鎖的にアイデアが生まれることもある。アイデアを効率的に生み出すための発想法がすでに何種類もあるが、これらの中には複数人で集まって話し合ってアイデアを出すものも多い\cite{hassouhou}。
@@ -101,52 +101,33 @@
 現在、HMDに関する多くの研究は一人で特定の場所において使うことが想定されている。現状では外などの広い空間を利用し、複数人で利用することを想定した研究やアプリケーションは少ない。そこで、複数人で使用できて、どこでも利用できるシステムが必要だと考え、本研究の立案に至った。
 
 \subsection{従来研究}
-\subsubsection{空間上に文字を描く研究}
-これまで多くの空間上に文字を描く研究がされてきた。椎尾ら\cite{siio},\cite{siio2}は仮想の手書きメモによるコミュニケーションをウェアラブルコンピュータにより実現する空気ペンを試作した。空気ペンはユーザが任意の空間上に手書き情報を描画することが出来る機器である。HMDを利用することによって、空気ペンを使用して描いた手書き情報を見ることができる（図\ref{fig:tegakijouhou}, \ref{fig:kuukipen}）。ペン本体には、ジャイロセンサ、加速度センサが内蔵されており、これらにより描いた情報の記録を行う。また、床上にはRFID(Radio Frequency Identification)タグをつけることによって位置情報を取得している。
+\subsubsection{HMDを付けて複数人で使用することを想定したシステムを開発する研究}
+長田ら\cite{nagata}はスマートグラスを用いた仮想空間への手書き情報共有システムを開発した(図\ref{fig:kasoukuukan})。ジェスチャの認識を用いて指の追跡を行い、軌跡を描くことで手書き情報を実現した。空間への描画は物体の動きをカメラで捉え行う。これによって仮想空間において手書き情報を共有することができるようになった。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=5.0cm,width=6.0cm]{./tegakijouhou.eps}
-    \caption{描いた情報}
-    \label{fig:tegakijouhou}
+    \includegraphics[clip,height=6.0cm,width=8.0cm]{./kasoukuukan.eps}
+    \caption{仮想空間への情報共有システム}
+    \label{fig:kasoukuukan}
   \end{center}
 \end{figure}
+
+Gugenheimerら\cite{Gugenheimer}はHMDユーザとのやり取りやVR体験の一部となるように、非HMDユーザに仮想世界を視覚化するために、位置追跡と組み合わせてフロアプロジェクションとモバイルディスプレイを使用するShareVRを作成した(図\ref{fig:sharevr})。現行のVRシステムは、HMDを着用しているユーザの没入感を高めることに主に焦点を当て、その結果、すべての非HMDユーザをその経験から除外している。そこでこの研究では非HMDユーザにも没入感を与えるようなシステムの開発を行った。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=7.0cm,width=6.0cm]{./kuukipen.eps}
-    \caption{空気ペン}
-    \label{fig:kuukipen}
+    \includegraphics[clip,height=6.0cm,width=9.0cm]{./sharevr.eps}
+    \caption{ShareVR}
+    \label{fig:sharevr}
   \end{center}
 \end{figure}
 
-Agrawalら\cite{agrawal}は携帯電話が内蔵している加速度計を使用して人間の筆跡を認識するPhonePoint Penというシステムを開発した(図\ref{fig:phonepointpen})。手のジェスチャによる加速度は、幾何学的なストロークに変換されて、文字として認識される。携帯電話をペンのように持って描くことで、ユーザーは短いメッセージを書くことができ、簡単な図形を空中に描くことが可能になった。プロトタイプの評価実験を行った結果より英語の文字を平均91.9\%の精度で識別できることがわかった。
-
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[clip,height=5.0cm,width=6.0cm]{./phonepointpen.eps}
-    \caption{PhonePoint Pen}
-    \label{fig:phonepointpen}
-  \end{center}
-\end{figure}
-
-また、近年の研究ではSunら\cite{sun}は携帯端末からのWi-Fi信号を利用してハンズフリーでの描画を可能にするWiDrawを作成した。従来の研究では、ユーザーがワイヤレストランスミッタを保持する必要があるか、カスタムワイヤレスハードウェアを必要とするか、事前定義されたハンドジェスチャのみを決定する必要があったが、この研究ではウェアラブルデバイスを必要としない、W-iFiカードを使用した初めてのモーショントラッキングシステムを開発した(図\ref{fig:widraw})。
-
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[clip,height=7.0cm,width=6.0cm]{./widraw.eps}
-    \caption{WiDraw}
-    \label{fig:widraw}
-  \end{center}
-\end{figure}
-
-
-\subsubsection{実世界の物に関連付けてアイデアを残す研究}
+\subsubsection{HMDを付けて広い空間で使用することを想定したシステムを開発する研究}
 高山ら\cite{tano},\cite{tano2}は実世界のどのような時間・場所であっても、ユーザが思い浮かんだふとしたアイデアを、生起を誘発したコンテキストに対応付けて保存し、それを他のユーザと共有できるシステムを作成した(図\ref{fig:informal}, \ref{fig:informal2})。ユーザーは同じような状況の時にコンテキストに対応づけて保存したインフォーマル情報を見ることができるようになった。多くのユーザーが思い浮かんだインフォーマル情報を保存することによって、実世界自体が巨大な掲示板のようになり、これによってユーザは状況に合った質の良い情報を得ることが可能になった。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=5.0cm,width=6.0cm]{./informal.eps}
+    \includegraphics[clip,height=6.0cm,width=7.0cm]{./informal.eps}
     \caption{実世界の場所に関連付けてアイデアを保存}
     \label{fig:informal}
   \end{center}
@@ -154,79 +135,91 @@ Agrawalら\cite{agrawal}は携帯電話が内蔵している加速度計を使�
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=5.0cm,width=7.0cm]{./informal2.eps}
+    \includegraphics[clip,height=6.0cm,width=8.0cm]{./informal2.eps}
     \caption{機器を装着してるときの様子}
     \label{fig:informal2}
   \end{center}
 \end{figure}
 
-近年の研究では吉野ら\cite{yoshino}は実世界の物と関連付けたアイデアの共有による発想支援システム「ものぴこん」の開発をした。創造能力低下の原因として、日常生活における継続的な創造的思考の機会の減少が挙げられていた。この研究では、人は実空間上の「もの」を見ることで視覚刺激を受け、新しいアイデアを発想できるということに着目した。そこで、特定物体認識技術を用いることで、身の周りの「もの」を介してアイデアを日常的に共有するシステム「ものぴこん」の開発を行った(図\ref{fig:monopikon})。
+Bonfertら\cite{bonfert}は屋外環境でスマートフォンとHMDを用いて再生可能な複合現実感マルチプレイヤーゲームの試作を行った(図\ref{fig:augmented_invaders})。プレイヤー間の相対的な位置はGPSを使用して追跡され、スマートフォンの背面カメラは仮想オブジェクトで環境とチームメイトを補強するために使用される。 マルチプレイヤー、複合現実感、地理的位置と屋外行動の併用、手頃な価格のモバイル機器の組み合わせにより、斬新な戦略的ソーシャルゲーム体験が可能になった。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=4.0cm,width=8.0cm]{./monopikon.eps}
-    \caption{ものぴこんのシステム構成}
-    \label{fig:monopikon}
+    \includegraphics[clip,height=6.0cm,width=8.0cm]{./augmented_invaders.eps}
+    \caption{屋外環境で利用可能な複合現実感マルチプレイヤーゲーム}
+    \label{fig:augmented_invaders}
   \end{center}
 \end{figure}
 
-\subsubsection{複数人で使用することを想定したシステムを開発する研究}
-Bast\'ea-Forteら\cite{bastea}は共有キャンバスを用いてブレインストーミングを支援する共同スケッチシステムを開発した(図\ref{fig:collaborative_sketch})。共有スケッチの閾値を下げることですべてのメンバーからのアイデアの生成が増えて、他のメンバーのアイデアを構築できると考えてこのシステムを開発した。このシステムを利用することで、デジタルホワイトボードを用いた共有キャンバス上で各ユーザがタブレットPCで描写したスケッチの共有が可能になった。
+\subsubsection{HMDを使用して3D空間上に文字や図形を描くことに関する研究}
+椎尾ら\cite{siio},\cite{siio2}は仮想の手書きメモによるコミュニケーションをウェアラブルコンピュータにより実現する空気ペンを試作した。空気ペンはユーザが任意の空間上に手書き情報を描画することが出来る機器である。HMDを利用することによって、空気ペンを使用して描いた手書き情報を見ることができる（図\ref{fig:tegakijouhou}, \ref{fig:kuukipen}）。ペン本体には、ジャイロセンサ、加速度センサが内蔵されており、これらにより描いた情報の記録を行う。また、床上にはRFID(Radio Frequency Identification)タグをつけることによって位置情報を取得している。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=7.0cm,width=6.0cm]{./collaborative_sketch.eps}
-    \caption{共同スケッチシステム}
-    \label{fig:collaborative_sketch}
+    \includegraphics[clip,height=6.0cm,width=7.0cm]{./tegakijouhou.eps}
+    \caption{描いた情報}
+    \label{fig:tegakijouhou}
   \end{center}
 \end{figure}
 
-友広ら\cite{tomohiro}はタブレットPCとデプス(depth)カメラを用いてプロトタイプのスケッチインタフェースを開発した(図\ref{fig:3dsketch})。スケッチは情報記録、共有、そしてアイデアの発想のためのツールとして使用されている。2Dのスケッチを描くことと同様に3Dのスケッチが描くことが可能になれば、裏面の凹凸情報を複数視点から描かなくても状況の理解が促すことができると考えてこのシステムを作成した。
-
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=5.0cm,width=8.0cm]{./3dsketch.eps}
-    \caption{3Dスケッチインタフェース}
-    \label{fig:3dsketch}
+    \includegraphics[clip,height=8.0cm,width=7.0cm]{./kuukipen.eps}
+    \caption{空気ペン}
+    \label{fig:kuukipen}
   \end{center}
 \end{figure}
 
-長田ら\cite{nagata}はスマートグラスを用いた仮想空間への手書き情報共有システムを開発した(図\ref{fig:kasoukuukan})。ジェスチャの認識を用いて指の追跡を行い、軌跡を描くことで手書き情報を実現した。空間への描画は物体の動きをカメラで捉え行う。これによって仮想空間において手書き情報を共有することができるようになった。
+Machucaら\cite{machuca}はフリーハンド描画の柔軟性と完璧な形を描く能力をユーザに提供するVR描画システムMultiplanesを作成した(図\ref{fig:multiplanes})。ユーザが描画を行っている間、システムは意図された形状に基づいてユーザのストロークは美化を行う。他のシステムとは違って、このシステムではユーザは手動で設定したり特別なジェスチャを必要としない。このシステムを用いることによってユーザのストロークは自動的に美化され、綺麗な図形を描くことを実現した。
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=5.0cm,width=7.0cm]{./kasoukuukan.eps}
-    \caption{仮想空間への情報共有システム}
-    \label{fig:kasoukuukan}
+    \includegraphics[clip,height=6.0cm,width=15.0cm]{./multiplanes.eps}
+    \caption{Multiplanes}
+    \label{fig:multiplanes}
+  \end{center}
+\end{figure}
+
+Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力に影響を与える要因を分析をする研究を行った(図\ref{fig:evaluation_sketch})。実験結果より、物理的な描画面がないことがVRで描画することの不正確さの主な原因であることがわかった。また、付加的な視覚誘導を行うことは位置の精度を改善するが、綺麗にストロークを描くのに悪い影響を与えることもわかった。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=5.0cm,width=15.0cm]{./evaluation_sketch.eps}
+    \caption{3Dスケッチに関して分析を行う研究}
+    \label{fig:evaluation_sketch}
   \end{center}
 \end{figure}
 
 \subsection{従来研究の問題点}
 従来研究の分析を行い、以下の三つの問題点にまとめる。
 
-\subsection*{問題点１： 同時に複数人で使用することを想定していない}
-既存の研究の多くは一人で使用することを想定している。または、将来的には複数人で使用することを目標として開発を目指したが、現状では一人でしか使えない、同時に複数人では使うことができない等のシステムが多い。アイデアは一人で考えて生み出すものとは限らない。複数人で集まって話し合うことによって、一人では思いつかなかったアイデアが生まれたり、話が弾んでいくうちに連鎖的にアイデアが生まれることもある。したがって、複数人で使用可能でリアルタイムで同時に使用できるシステムが望ましい。
+\subsection*{問題点１： HMDを付けて同時に複数人で使用することを想定していない}
+既存の研究の多くは一人で使用することを想定している。または、将来的には複数人で使用することを目標として開発を目指したが、現状では一人でしか使えない、同時に複数人では使うことができない等のシステムが多い。
+%アイデアは一人で考えて生み出すものとは限らない。複数人で集まって話し合うことによって、一人では思いつかなかったアイデアが生まれたり、話が弾んでいくうちに連鎖的にアイデアが生まれることもある。したがって、複数人で使用可能でリアルタイムで同時に使用できるシステムが望ましい。
 
-\subsection*{問題点２：使用できる場所が限定されている}
-既存の研究の多くは特定の場所において使用することを想定している。または、持ち運びは一応可能であるが、多くの機器を装着しなければならない等のシステムで、実際に使用するのは厳しいというものが多い。アイデアはふとしたときに思い浮かぶものであり、座って作業しているときだけに限らず、歩いているときや机やホワイトボード等がないような場面でも突然思い浮かぶことがある。アイデアは思い浮かんだときに忘れないようにできるだけすぐに書き留めたほうが良い。したがって、どこでも場所を選ばずに使用できるシステムが望ましい。
+\subsection*{問題点２：HMDを付けて使用するシステムで利用できる場所が限定されている}
+既存の研究の多くは特定の場所において使用することを想定している。または、持ち運びは一応可能であるが、多くの機器を装着しなければならない等のシステムで、実際に使用するのは厳しいというものが多い。
+%アイデアはふとしたときに思い浮かぶものであり、座って作業しているときだけに限らず、歩いているときや机やホワイトボード等がないような場面でも突然思い浮かぶことがある。アイデアは思い浮かんだときに忘れないようにできるだけすぐに書き留めたほうが良い。したがって、どこでも場所を選ばずに使用できるシステムが望ましい。
 
-\subsection*{問題点３：入力手法が限定されている}
-既存の研究の多くは指のみの操作しかできない等で入力手法が限定されている。または、操作が複雑で慣れるのに時間がかかる等のシステムが多い。アイデアは短い言葉でまとめるのは困難である場合もある。また、アイデアの形は様々である。アイデアは文字だけではなく図形として残す場合もあったり、または平面の形をとったり、立体的な形をとることもある。したがって、簡単な操作で直感的に様々な入力ができるシステムが望ましい。
+\subsection*{問題点３：HMDを付けて使用するシステムで入力手法が限定されている}
+既存の研究の多くは指のみの操作しかできない等で入力手法が限定されている。または、操作が複雑で慣れるのに時間がかかる等のシステムが多い。
+%アイデアは短い言葉でまとめるのは困難である場合もある。また、アイデアの形は様々である。アイデアは文字だけではなく図形として残す場合もあったり、または平面の形をとったり、立体的な形をとることもある。したがって、簡単な操作で直感的に様々な入力ができるシステムが望ましい。
 
 \newpage
 \section{本研究のコンセプト}
-本章では、
+本章では、前章で述べた問題点を踏まえた上でシステムコンセプトを述べる。また、3D空間上のアイデアについて分析した上で、利用シーンに関しても述べる。
 
-\subsection{新しいシステムのコンセプトの提案} \label{concept}
-従来研究では一人で使用をすることを想定していたり、使用できる場所が限定される、持ち運びが難しい、操作が複雑等の問題点があった。
+\subsection{システムコンセプト} \label{concept}
+従来研究では一人で使用をすることを想定していたり、使用できる場所が限定される、入力手法が限定的等の問題点があった。
 
-アイデアは一人で深く考えて練ったり生み出すこともあるが、友人との話し合いをしたり、議論をしていくうちにアイデアが生まれることがある。よって複数人で使用できるシステムが必要である。
+%アイデアは一人で深く考えて練ったり生み出すこともあるが、友人との話し合いをしたり、議論をしていくうちにアイデアが生まれることがある。よって複数人で使用できるシステムが必要である。
+%
+%アイデアはふとしたときに突然思い浮かぶものである。現状、私達は浮かんだアイデアを紙に書き留めたり、PCを利用してメモを取っている。しかし、アイデアが思い浮かぶのは座って作業しているときだけとは限らない。外で歩いているときや、机やホワイトボード等がないような場面でも突然思い浮かぶことがある。したがって、場所を限定することなく、どこでも使用できるシステムが必要である。
+%
+%思い浮かんだアイデアは短い言葉だけで表すことが難しい場合もある。また、話した内容もそのまま残しておきたい場合もある。また、人によって入力のしやすい方法は異なる。よって、複雑なジェスチャをすることなく直感的に様々な入力ができるようなシステムが必要である。
+%
 
-アイデアはふとしたときに突然思い浮かぶものである。現状、私達は浮かんだアイデアを紙に書き留めたり、PCを利用してメモを取っている。しかし、アイデアが思い浮かぶのは座って作業しているときだけとは限らない。外で歩いているときや、机やホワイトボード等がないような場面でも突然思い浮かぶことがある。したがって、場所を限定することなく、どこでも使用できるシステムが必要である。
-
-思い浮かんだアイデアは短い言葉だけで表すことが難しい場合もある。また、話した内容もそのまま残しておきたい場合もある。また、人によって入力のしやすい方法は異なる。よって、複雑なジェスチャをすることなく直感的に様々な入力ができるようなシステムが必要である。
-
-そこで、本研究は以下の三つを満たすようなシステムを提案する(図\ref{fig:concept})。
+そこで、本研究は以下の三つを満たすようなHMDを使用したシステムを提案する(図\ref{fig:concept})。
 
 \begin{enumerate}[(1)]
  \item 複数人で同時に使用することが可能
@@ -258,7 +251,7 @@ Bast\'ea-Forteら\cite{bastea}は共有キャンバスを用いてブレイン�
 
 また、平面の形を持った文字以外に立体的な形を持つ文字が存在すると考えられる。立体的な文字に関してはそれ自体に意味を持つので回転したり等はしないほうがよいと考えられる。
 
-\subsection{様々なアイデアの形}　\label{idea_katachi}
+\subsection{3D空間上のアイデア}　\label{idea_katachi}
 アイデアの形は様々である。大きく分けると描いて残すアイデアと話して残すアイデアがあるが、それぞれのアイデアも様々な形がある。以下ではそれぞれのアイデアを細かく分けて分類した上でそれぞれについて詳しく説明する。
 
 \subsubsection{描いて残すアイデア} \label{draw_idea}
@@ -1200,20 +1193,20 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 今日ではHMDを使用したシステムを開発する研究が様々な研究が行われている。本研究では、既存の研究を分析して次に示すような3つの問題点を抽出した。
 
 \begin{itemize}
-	\item HMDをかぶって同時に複数人で使用することを想定していない
-        \item HMDを使用するシステムで使用できる場所が限定されている
-	\item HMDを使用するシステムで入力手法が限定されている
+	\item HMDを付けて同時に複数人で使用することを想定していない
+        \item HMDを付けて使用するシステムで利用できる場所が限定されている
+	\item HMDを付けて使用するシステムで入力手法が限定されている
 \end{itemize}
 
-以上の問題点を踏まえた上で、以下のような新しいシステムのコンセプトを提案した。
+以上の問題点を踏まえた上で、以下のようなHMDを付けていることを前提として、新しいシステムのコンセプトを提案した。
 
 \begin{itemize}
 	\item 複数人で同時に使用することが可能
-        \item どこでも場所を選ばずに利用が可能
+        \item どこでも場所を選ばず利用が可能
 	\item 簡単な操作で直感的で様々な入力が可能
 \end{itemize}
 
-このコンセプトを基にしたシステムの設計を行った。設計した様々な入力ができて実世界の空間上にメモを残すことができて、遠くにあるメモも操作することができて、複数人で使用できるように共有できるように設計を行った。
+このコンセプトを基にしたシステムの設計を行った。設計したシステムは様々な入力ができて実世界の空間上にメモを残すことができて、遠くにあるメモも操作することができて、複数人で使用できるように共有できるように設計を行った。
 
 この設計を基にプロトタイプシステムの実装を行い、実装したプロトタイプシステムの評価をするための実験を行った。実験は、被験者に指示通りに遂行してもらうシナリオ実験と、自分で考えて課題を解決する課題解決実験の2つを行い、実験後にアンケートに回答してもらった。
 
@@ -1242,19 +1235,16 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 \begin{thebibliography}{数字}
   \bibitem{memo} EvernoteやOneNote普及も…メモしない現代人の言い分; \textless\url{https://sirabee.com/2017/12/24/20161413693/}\textgreater2017年12月31日アクセス.
   \bibitem{hassouhou} 7つのアイデア発想フレームワーク; \textless\url{https://creive.me/archives/6722/}\textgreater2017年12月31日アクセス.
-　\bibitem{siio} 山本, 椎尾: 空気ペン―空間への描画による情報共有―; 情報処理学会全国大会講演論文集, Vol.59, No.4,
-pp.39-40(1999).
-  \bibitem{siio2} 椎尾, 山本: コミュニケーションツールのための簡易型AR システム; コンピュータソフトウェア, Vol.19,
-No.4, pp.246-253(2002).
-  \bibitem{agrawal} Sandip Agrawal, Ionut Constandache, Shravan Gaonkar, Romit Roy Choudhury, Kevin Caves and Frank DeRuyter: Using mobile phones to write in air; Proceedings of the 9th international conference on Mobile systems, applications, and services(MobiSys '11), pp.15–28(2011).
-  \bibitem{sun} Li Sun, Souvik Sen, Dimitrios Koutsonikolas and Kyu-Han Kim: WiDraw: Enabling Hands-free Drawing in the Air on Commodity WiFi Devices; Proceedings of the 21st Annual International Conference on Mobile Computing and Networking(MobiCom '15), pp77-89(2015).
+  \bibitem{nagata} 長田, 佐々木, 島田, 佐藤: スマートグラスを用いた仮想空間への手書き情報共有システム; 情報処理学会第77 回全国大会論文集, 3-205, 206(2015).
+  \bibitem{Gugenheimer} 	Jan Gugenheimer, Evgeny Stemasov, Julian Frommel and Enrico Rukzio: ShareVR: Enabling Co-Located Experiences for Virtual Reality between HMD and Non-HMD Users; Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp4021-4033(2017).
   \bibitem{tano} 高山, 瑞慶山, 田野, 岩田, 橋山: 実世界コンテキスト・情報を用いたユビキタスインフォーマルコミュニケーションの実装と評価; ヒューマンインタフェースシンポジウム2005, pp.955-958(2005).
   \bibitem{tano2} Tano, S., Takayama, T., Iwata, M. and Hashiyama, T.: Wearable Computer for Ubiquitous Informal Communication; Sixth International Workshop on Smart Appliances and Wearable Computing-IWSAWC 2006-(at 26th IEEE International Conference on Distributed Computing Systems
 ICDCS), pp.1-8(2006).
-  \bibitem{yoshino} 吉野, 松原: 実世界のモノと関連づけたアイデアの共有による発想支援システム「ものぴこん」の開発と評価, マルチメディア, 分散, 協調とモバイルシンポジウム(DICOMO2013), pp599-607(2013).
-  \bibitem{bastea} 	Marcello Bast\'ea-Forte, Corina Yen: Encouraging contribution to shared sketches in brainstorming meeting; In CHI '07 Extended Abstracts on Human Factors in Computing Systems, pp2267-2272(2007). 
-  \bibitem{tomohiro} 友広, 角, 松村: 凹凸情報を持つ写真をキャンバスとした立体スケッチシステム, 第22回インタラクティブシステムとソフトウェアに関するワークショップ(WISS 2014), 1A-10(2014).
-  \bibitem{nagata} 長田, 佐々木, 島田, 佐藤: スマートグラスを用いた仮想空間への手書き情報共有システム; 情報処理学会第77 回全国大会論文集, 3-205, 206(2015).
+  \bibitem{bonfert} Michael Bonfert, Inga Lehne, Ralf Morawe, Melina Cahnbley, Gabriel Zachmann and Johannes Sch\"oning: Augmented invaders: a mixed reality multiplayer outdoor game; Proceedings of the 23rd ACM Symposium on Virtual Reality Software and Technology Article(VRST '17), No.48(2017).
+  \bibitem{siio} 山本, 椎尾: 空気ペン―空間への描画による情報共有―; 情報処理学会全国大会講演論文集, Vol.59, No.4, pp.39-40(1999).
+  \bibitem{siio2} 椎尾, 山本: コミュニケーションツールのための簡易型AR システム; コンピュータソフトウェア, Vol.19, No.4, pp.246-253(2002).
+  \bibitem{machuca} Mayra D. Barrera Machuca, Paul Asente, Jingwan Lu, Byungmoon Kim and Wolfgang Stuerzlinger: Multiplanes: Assisted Freehand VR Drawing; Proceeding of Adjunct Publication of the 30th Annual ACM Symposium on User Interface Software and Technology(UIST '17), pp1-3(2017).
+  \bibitem{arora} Rahul Arora, 	Rubaiat Habib Kazi, 	Fraser Anderson, Tovi Grossman, Karan Singh and George Fitzmaurice: Experimental Evaluation of Sketching on Surfaces in VR, Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp5643-5654(2017).
   \bibitem{hololens} Microsoft Inc.: HoloLens; \textless\url{https://www.microsoft.com/ja-jp/hololens}\textgreater2018年1月2日アクセス.
   \bibitem{visualstudio} Microsoft Inc.; Visual Studio 2017: \textless\url{https://docs.microsoft.com/ja-jp/visualstudio/}\textgreater2018年1月27日アクセス.
   \bibitem{unity} Unity Technologies Inc.: Unity;  \textless\url{https://unity3d.com/jp/unity}\textgreater2018年1月27日アクセス.
