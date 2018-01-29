@@ -48,7 +48,9 @@
 		\renewcommand{\thefootnote}{\fnsymbol{footnote}} 
 		{\Large 田 野 研 究 室} 
 		\vspace{3ex} \\ 
-		{\Large 指導教員 : 田 野 \ 俊 一} 
+		{\Large 主任指導教員 : 田 野 \ 俊 一} 
+		\vspace{3ex} \\
+                {\Large 指導教員 : 橋 山 \ 智 訓} 
 		\vspace{3ex} \\
 		{\Large 学籍番号 : 1630012 \ / \ 猪 膝 \ 孝 之} 
 		\vspace{5ex} \\ 
@@ -70,7 +72,16 @@
 本章では、1.1節にて本研究の概要についてを、1.2節にて本論文の構成について述べる。
 
 \subsection{研究の概要}
+近年ではVR関連のニュースや記事を目にすることが多くなった。また、HMD(Head Mounted Display)が普及してきており、HMDに関する研究は医療分野やデザイナー向け、または日常向けと様々である。具体的にはHMDを装着して3D空間上に文字や絵を描いたりする研究等がある。現在、HMDに関する研究は一人で使用することを想定していたり、特定の場所で使用することを想定していたり、手やペンで描くのみで入力手法が限定されているものが多い。
 
+そこで、以上の問題点を踏まえた上で本研究は以下の三つを満たすHMDを使用したシステムを提案する。
+\begin{itemize}
+ \item 複数人で同時に使用することが可能
+ \item どこでも場所を選ばず利用が可能
+ \item 簡単な操作で直感的で様々な入力が可能
+\end{itemize}
+
+以上のコンセプトに基づいたシステムを設計し、実際にプロトタイプシステムの実装を行った。また、評価実験ではシナリオ実験と課題解決実験の2つを行い、シナリオ実験での手順の遂行状況においてはほとんどの手順において成功率100\%を収めた。課題解決実験においても多くの被験者がタスクを実行することが確認できた。実験後のアンケート結果では、プロトタイプシステムの機能によっては好みが大きく分かれるものもあったが、全体的な評価は高かった。
 
 \subsection{本論文の構成}
 本論文の構成を以下に示す。本論文は全7章で構成される。
@@ -94,13 +105,16 @@
 \subsection{研究の背景}
 アイデアはふとしたときに思い浮かぶことがあり、私達はそれを紙に書き留めたり、PCやスマートフォン等を利用してメモを取ることがある。しかし、アイデアが思い浮かぶのは座って作業しているときだけでなく、外で歩いているときや、机やホワイトボード等がないような場面でも突然思い浮かぶことがある。紙とペンを持ち歩いて思い浮かんだらすぐにメモを取る習慣ができてる人はいいが、そうでない人はアイデアが思い浮かんでも「後でメモをすればいいや」と思ってすぐにメモを取ることを諦めてしまうだろう。実際に日頃からアイデアをメモに記録している人は少なくなってきている傾向がある\cite{memo}。思い浮かんだアイデアはできるだけ早くメモを取ったほうが良い。また、アイデアは一人で考えて生み出すものとは限らない。友人との話し合いをしているうちに一人では思いつかなかったアイデアが生まれたり、話が弾んで連鎖的にアイデアが生まれることもある。アイデアを効率的に生み出すための発想法がすでに何種類もあるが、これらの中には複数人で集まって話し合ってアイデアを出すものも多い\cite{hassouhou}。
 
-近年、HMD(Head Mounted Display)が普及してきた。HMDとは頭部に装着するディスプレイ装置のことであり、ウェアラブルコンピュータの一つである。ディスプレイ方式は、装着すると外の様子を見ることはできず、完全に別の世界にいるかのようになる非透過方式や、装着すると外の様子を見ることはできないが、カメラを通じてディスプレイに外の様子が映し出されているので、利用者は安全に移動することができるビデオ透過(ビデオシースルー)方式、ディスプレイ装置はハーフミラーでできており、外の様子が見える光学透過(光学シースルー)方式がある。
-
 最近ではVR関連のニュースや記事を目にすることが多くなった。また、ARやMR等といった言葉を聞くこともあり、どれが何なのか混乱しやすいという人もいる。VRとは「Virtual Reality」のことで、日本語では「人工現実感」等と訳される。VRゴーグルを装着して、360度すべての視界を覆うなどして高い没入感を得ることができる。近年のVRでは、リモコンでの操作やタップ、クリック等を行うことで自分の行動をVR映像内に反映させることもできて、より高度な没入感を得ることができる。また、ARとは「Augmented Reality」のことで、日本語では「拡張現実」等と訳される。ARを使用してできることは、現実にデジタル情報を付与してCG等で作った仮想現実を現実世界に拡張することである。MRとは「Mixed Reality」のことで、日本語では「複合現実感」等と訳される。VR環境と現実環境を融合する概念で、VR環境と実環境が相互的に関連する世界を構成する考え方である。
 
-現在、HMDに関する多くの研究は一人で特定の場所において使うことが想定されている。現状では外などの広い空間を利用し、複数人で利用することを想定した研究やアプリケーションは少ない。そこで、複数人で使用できて、どこでも利用できるシステムが必要だと考え、本研究の立案に至った。
+近年、HMD(Head Mounted Display)が普及してきた。HMDとは頭部に装着するディスプレイ装置のことであり、ウェアラブルコンピュータの一つである。ディスプレイ方式は、装着すると外の様子を見ることはできず、完全に別の世界にいるかのようになる非透過方式や、装着すると外の様子を見ることはできないが、カメラを通じてディスプレイに外の様子が映し出されているので、利用者は安全に移動することができるビデオ透過(ビデオシースルー)方式、ディスプレイ装置はハーフミラーでできており、外の様子が見える光学透過(光学シースルー)方式がある。
+
+HMDに関する研究はすでに多く行われている。医療技術に関する研究や、デザイナー向けの3Dスケッチに関する研究、他には3D空間上に文字や図形を描いたりする研究等もある。近年ではMRも流行化してきており、医療診断・手術計画や屋内外の誘導・案内・埋蔵物確認、都市計画・建築分野でのシミュレーション、アミューズメント産業等の応用分野から大きな期待がされている\cite{mr}。
+
+現在、HMDに関する多くの研究は一人で使うことが想定されている。また、特定の場所において使用することを想定している場合も多い。そして、手やペンで描くのみで入力手法が限定されている場合も多い。現状では複数人で使用することを想定していたり、外などの広い空間で利用することを想定していたり、手で描くだけでなく音声でも入力可能なシステムを想定している研究やアプリケーションは少ない。そこで、複数人で使用できて、どこでも利用できて、様々な入力ができるシステムが必要だと考え、本研究の立案に至った。
 
 \subsection{従来研究}
+ここでは本研究に関連する従来研究について述べる。
 \subsubsection{HMDを付けて複数人で使用することを想定したシステムを開発する研究}
 長田ら\cite{nagata}はスマートグラスを用いた仮想空間への手書き情報共有システムを開発した(図\ref{fig:kasoukuukan})。ジェスチャの認識を用いて指の追跡を行い、軌跡を描くことで手書き情報を実現した。空間への描画は物体の動きをカメラで捉え行う。これによって仮想空間において手書き情報を共有することができるようになった。
 
@@ -190,7 +204,7 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
   \end{center}
 \end{figure}
 
-\subsection{従来研究の問題点}
+\subsection{従来研究の問題点} \label{mondaiten}
 従来研究の分析を行い、以下の三つの問題点にまとめる。
 
 \subsection*{問題点１： HMDを付けて同時に複数人で使用することを想定していない}
@@ -210,7 +224,7 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 本章では、前章で述べた問題点を踏まえた上でシステムコンセプトを述べる。また、3D空間上のアイデアについて分析した上で、利用シーンに関しても述べる。
 
 \subsection{システムコンセプト} \label{concept}
-従来研究では一人で使用をすることを想定していたり、使用できる場所が限定される、入力手法が限定的等の問題点があった。
+\ref{mondaiten}節でも述べた通り、従来研究ではHMDを付けて同時に複数人で使用することを想定していない、HMDを付けて使用するシステムで利用できる場所が限定されている、HMDを付けて使用するシステムで入力手法が限定されているという問題点があった。
 
 %アイデアは一人で深く考えて練ったり生み出すこともあるが、友人との話し合いをしたり、議論をしていくうちにアイデアが生まれることがある。よって複数人で使用できるシステムが必要である。
 %
@@ -219,9 +233,9 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 %思い浮かんだアイデアは短い言葉だけで表すことが難しい場合もある。また、話した内容もそのまま残しておきたい場合もある。また、人によって入力のしやすい方法は異なる。よって、複雑なジェスチャをすることなく直感的に様々な入力ができるようなシステムが必要である。
 %
 
-そこで、本研究は以下の三つを満たすようなHMDを使用したシステムを提案する(図\ref{fig:concept})。
+そこで、\ref{mondaiten}節の従来研究の問題点を踏まえ、本研究は以下の三つを満たすようなHMDを使用したシステムを提案する(図\ref{fig:concept})。
 
-\begin{enumerate}[(1)]
+\begin{enumerate}
  \item 複数人で同時に使用することが可能
  \item どこでも場所を選ばず利用が可能
  \item 簡単な操作で直感的で様々な入力が可能
@@ -231,20 +245,20 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[clip,height=6.0cm,width=7.0cm]{./concept.eps}
-    \caption{本研究のコンセプト}
+    \includegraphics[clip,height=8.0cm,width=9.0cm]{./concept.eps}
+    \caption{システムコンセプト}
     \label{fig:concept}
   \end{center}
 \end{figure}
 
 \subsection*{特徴１：複数人で同時に使用することが可能}
-既存の研究では一人で使用することを想定したシステムが多かった。または、将来的には複数人で使用できるようにすることを目標にしてるが現状のシステムでは一人でしか使用できないというものも多かった。他には、複数人で使用することはできるが同時に使用することができないというものあった。アイデアは一人で考えて生み出す場合もあるが、複数人で集まって話し合って一緒に考えることによってアイデアが生まれることもある。ある人がアイデアを出せば、そのアイデアに対して他の人が反応して新たな意見を出して、そこからまた新しいアイデアが生まれることもある。それが連鎖的に続くことによって結果的にアイデアをたくさん生み出すことに繋がる。アイデアを効率的に生み出す方法が既に何種類も存在するが、その中には実際に複数人で集まって話し合ってアイデアを出し合うというものも多い。したがって、複数人で同時に使用できて、お互いのメモをリアルタイムで共有できることが必要不可欠である。また、複数人で利用する際に空間上に文字を残す場合に問題点が発生する。その問題点については\ref{moji_mondai}で詳しく述べる。
+既存の研究では一人で使用することを想定したシステムが多かった。または、将来的には複数人で使用できるようにすることを目標にしてるが現状のシステムでは一人でしか使用できないというものも多かった。他には、複数人で使用することはできるが同時に使用することができないというものあった。アイデアは一人で考えて生み出す場合もあるが、複数人で集まって話し合って一緒に考えることによってアイデアが生まれることもある。ある人がアイデアを出せば、そのアイデアに対して他の人が反応して新たな意見を出して、そこからまた新しいアイデアが生まれることもある。それが連鎖的に続くことによって結果的にアイデアをたくさん生み出すことに繋がる。アイデアを効率的に生み出す方法が既に何種類も存在するが、その中には実際に複数人で集まって話し合ってアイデアを出し合うというものも多い。したがって、複数人で同時に使用できて、お互いのメモをリアルタイムで共有できることが必要不可欠である。また、複数人で利用する際に空間上に文字を残す場合に問題点が発生する。その問題点については\ref{moji_mondai}節で詳しく述べる。
 
 \subsection*{特徴２：どこでも場所を選ばず利用が可能}
 既存の研究では机やPCの近く、または特定の場所等のみでしか使用できないシステムが多かった。他には、どこでも利用可能ではあるが多くの機器を装着しなければならなかったり等、可搬性に問題があるシステムもあった。アイデアが生まれるのは椅子に座って机で作業しているときや、黒板やホワイトボード等の前に立っているとき等、何かノート等を使ってメモを取ることができる場所だけとは限らない。アイデアは思いがけない場所でふとしたときに突然思い浮かぶことがある。時には外で歩いているときや、軽い運動をしているときに思い浮かぶこともある。実際に動きながらメモを取るのは困難である。また、普段から常にメモ帳等を持っていてすぐにメモを取る習慣がついている人は良いが、そうでない人はメモを取ることを諦めてしまったり、後回しにしまいがちである。アイデアが思い浮かんだら、当然すぐにメモを取るほうが良い。したがって、どこでも場所を選ばずに利用できるようなシステムが必要である。
 
 \subsection*{特徴３：簡単な操作で直感的で様々な入力が可能}
-既存の研究では空間上で描くのみ等で入力手法が限定されているシステムが多かった。または、特別なジェスチャを定義して使用する必要があったり、慣れるのにかなり時間がかかる等のシステムもあった。\ref{idea_katachi}でも述べるがアイデアの形は文字や図形等、様々な形をとる。立体的な形を持ったアイデアもあれば、平面の形を持ったアイデアも存在する。仮に入力手法を空間上に描くのみにした場合、考えたアイデアが短い文章にまとまらないときメモを取ることが困難である。また、仮に入力手法を音声のみにした場合、シンプルな図形であれば表示できるかもしれないが、大きさを音声入力で指定しなければならなかったり、複雑な図形を描く際は困難である。したがって、簡単な操作で直感的で様々な入力ができるシステムが必要である。
+既存の研究では空間上で描くのみ等で入力手法が限定されているシステムが多かった。または、特別なジェスチャを定義して使用する必要があったり、慣れるのにかなり時間がかかる等のシステムもあった。\ref{idea_katachi}節でも述べるがアイデアの形は文字や図形等、様々な形をとる。立体的な形を持ったアイデアもあれば、平面の形を持ったアイデアも存在する。仮に入力手法を空間上に描くのみにした場合、考えたアイデアが短い文章にまとまらないときメモを取ることが困難である。また、仮に入力手法を音声のみにした場合、シンプルな図形であれば表示できるかもしれないが、大きさを音声入力で指定しなければならなかったり、複雑な図形を描く際は困難である。したがって、簡単な操作で直感的で様々な入力ができるシステムが必要である。
 
 \subsection{文字を表示する上での問題点と解決案} \label{moji_mondai}
 複数人で空間上に文字のメモを残す際に、見る視点によって文字として見えないという問題点が発生する。解決案として、文字を動的に相手の方向に回転させて向けたり、文字のメモに触れたら自分の前に見えるように表示する等の方法が考えられる。しかし、文字を動的に相手の方向に回転させて向けてはいけない場合もある。それは、平面上に文字のメモを残した場合である。何故ならばその平面そのものに意味があるからである。このようなメモの表示に関しての解決案は、その平面上に残した文字のメモに目線を合わせて、それ自体はそのままにしておき、その平面上に残した文字を目の前等の自分の見やすい位置に表示するという手法を提案する。
@@ -255,7 +269,7 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 アイデアの形は様々である。大きく分けると描いて残すアイデアと話して残すアイデアがあるが、それぞれのアイデアも様々な形がある。以下ではそれぞれのアイデアを細かく分けて分類した上でそれぞれについて詳しく説明する。
 
 \subsubsection{描いて残すアイデア} \label{draw_idea}
-描いて残すアイデアを細かく分けると図\ref{fig:draw_idea}のようになる。描いて残すアイデアは、最初に絵と文字に分けることができると考えられる。更に絵のアイデアは、立方体等のように空間上に線を引いて描く3Dのアイデアと、空間上に仮想的な平面を用意してそこに丸や四角形等のように平面上に線を引いて描く2Dのアイデアに分けることができると考えられる。また、文字のアイデアも同様に立体的な形を持つ3Dのアイデアと、平面上に描いて残す2Dのアイデアに分けることができると考えられる。この2Dの文字の文字に関しては実際に空間上に描いて残すには問題がある。この問題点に関しては\ref{moji_mondai}で述べたが、具体的な解決案に関しては次章で述べる。
+描いて残すアイデアを細かく分けると図\ref{fig:draw_idea}のようになる。描いて残すアイデアは、最初に絵と文字に分けることができると考えられる。更に絵のアイデアは、立方体等のように空間上に線を引いて描く3Dのアイデアと、空間上に仮想的な平面を用意してそこに丸や四角形等のように平面上に線を引いて描く2Dのアイデアに分けることができると考えられる。また、文字のアイデアも同様に立体的な形を持つ3Dのアイデアと、平面上に描いて残す2Dのアイデアに分けることができると考えられる。この2Dの文字の文字に関しては実際に空間上に描いて残すには問題がある。この問題点に関しては\ref{moji_mondai}節で述べたが、具体的な解決案に関しては次章で述べる。
 
 \begin{figure}[H]
   \begin{center}
@@ -266,7 +280,7 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 \end{figure}
 
 \subsubsection{話して残すアイデア} \label{speak_idea}
-話して残すアイデアを細かく分けると図\ref{fig:speak_idea}のようになる。話して残すアイデアは、最初に絵と文字と感嘆詞に分けることができると考えられる。更に絵のアイデアは、「立方体」と発声して立方体等を出現させて残す3Dのアイデアと、「四角形」と発声して平面の形をとった四角形等を出現させて残すアイデアがあると考えられる。また、文字のアイデアは視覚的に見ることができるテキスト形式のアイデアと、議事録のように話した内容をそのままを音声として残すバイナリ形式のアイデアに分けることができると考えられる。テキスト形式の文字のアイデアは実際に空間上に話して残すには問題がある。この問題点に関しては\ref{moji_mondai}で述べたが、具体的な解決案に関しては次章で詳しく述べる。最後に感嘆詞についてであるが、人は考える際には「うーん」や「えーっと」等、思わず声に出してしまうことがある。また、声に出すことだけに限らず、頭を傾げたり、頷いたりすることもある。これらは一人で考える際には重要ではないが、複数人で話し合ってアイデアを出すときには相手がどう考えているかがある程度わかる可能性があると考えられる。
+話して残すアイデアを細かく分けると図\ref{fig:speak_idea}のようになる。話して残すアイデアは、最初に絵と文字と感嘆詞に分けることができると考えられる。更に絵のアイデアは、「立方体」と発声して立方体等を出現させて残す3Dのアイデアと、「四角形」と発声して平面の形をとった四角形等を出現させて残すアイデアがあると考えられる。また、文字のアイデアは視覚的に見ることができるテキスト形式のアイデアと、議事録のように話した内容をそのままを音声として残すバイナリ形式のアイデアに分けることができると考えられる。テキスト形式の文字のアイデアは実際に空間上に話して残すには問題がある。この問題点に関しては\ref{moji_mondai}節で述べたが、具体的な解決案に関しては次章で詳しく述べる。最後に感嘆詞についてであるが、人は考える際には「うーん」や「えーっと」等、思わず声に出してしまうことがある。また、声に出すことだけに限らず、頭を傾げたり、頷いたりすることもある。これらは一人で考える際には重要ではないが、複数人で話し合ってアイデアを出すときには相手がどう考えているかがある程度わかる可能性があると考えられる。
 
 \begin{figure}[H]
   \begin{center}
@@ -293,10 +307,10 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
 
 \newpage
 \section{システム設計}
-本章ではまず前章の\ref{concept}で述べた(1)、(2)、(3)を踏まえた上でシステムの全体構成について述べる。その次にそれぞれの機能の設計に関して詳しく説明する。また、ハードウェアは可搬性を考慮して、マイクロソフト社のHoloLens\cite{hololens}を使用する。
+本章ではまず前章の\ref{concept}節で述べた(1)、(2)、(3)を踏まえた上でシステムの全体構成について述べる。その次にそれぞれの機能の設計に関して詳しく説明する。また、ハードウェアは可搬性を考慮して、マイクロソフト社のHoloLens\cite{hololens}を使用する。
 
 \subsection{全体構成}
-(1)複数人で話し合って実世界の3D空間上に残したお互いのメモを共有する機能を実現するために、サーバを介して空間を共有する機能が必要である。(2)実世界の広い空間上に任意の場所にメモを置く際には、遠くにあるメモに対して操作する機能が必要である。また、(3)簡単な操作で直感的な様々な入力を可能にするには、3D空間上に描画する機能だけではなく、マルチモーダルな入力が必要となる。以上より、システムの機能としては大きく分けて、メモを入力、メモを操作、メモを共有の三つであり、以下に詳細を述べる(図\ref{fig:systemzentai})。
+(1)複数人で同時に話し合って使用できてお互いのメモを共有できるようにするために、サーバを介して空間を共有する機能が必要である。(2)どこでも場所を選ばずに利用できて、実世界の広い空間上に任意の場所にメモを置く際には、遠くにあるメモに対して操作する機能が必要である。また、(3)簡単な操作で直感的で様々な入力を可能にするには、3D空間上に描画する機能だけではなく、音声でも入力ができることが必要である。以上より、システムの機能としては大きく分けて、メモを入力、メモを操作、メモを共有の三つであり、以下に詳細を述べる(図\ref{fig:systemzentai})。
 
 \begin{figure}[H]
   \begin{center}
@@ -856,7 +870,7 @@ HoloLensを2台使用して共有を行うためそれぞれのタスクの前�
 \begin{figure}[H]
   \begin{center}
     \includegraphics[clip,height=9.0cm,width=7.0cm]{./task4.eps}
-    \caption{課題解決実験で掲示した資料}
+    \caption{シナリオ実験で掲示した資料：5枚目}
     \label{fig:task4}
   \end{center}
 \end{figure}
@@ -1198,7 +1212,7 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 	\item HMDを付けて使用するシステムで入力手法が限定されている
 \end{itemize}
 
-以上の問題点を踏まえた上で、以下のようなHMDを付けていることを前提として、新しいシステムのコンセプトを提案した。
+以上の問題点を踏まえた上で、以下のようなHMDを付けていることを前提としたシステムコンセプトを提案した。
 
 \begin{itemize}
 	\item 複数人で同時に使用することが可能
@@ -1206,7 +1220,7 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 	\item 簡単な操作で直感的で様々な入力が可能
 \end{itemize}
 
-このコンセプトを基にしたシステムの設計を行った。設計したシステムは様々な入力ができて実世界の空間上にメモを残すことができて、遠くにあるメモも操作することができて、複数人で使用できるように共有できるように設計を行った。
+このコンセプトを基にしたシステムの設計を行った。様々な入力ができて実世界の任意の空間上にメモを残すことができて、遠くにあるメモも操作することができて、複数人で使用できるように共有できるようなシステムの設計を行った。
 
 この設計を基にプロトタイプシステムの実装を行い、実装したプロトタイプシステムの評価をするための実験を行った。実験は、被験者に指示通りに遂行してもらうシナリオ実験と、自分で考えて課題を解決する課題解決実験の2つを行い、実験後にアンケートに回答してもらった。
 
@@ -1219,7 +1233,7 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 本研究のプロトタイプシステムは、コンセプトの基本的な部分のみが実装されているに留まっている。プロトタイプの評価実験においては、線の描画の位置が正確でなかったり、Voice Lineの文字の位置が思ったところに出ない等の状況が確認されており、これを解決するにはハードウェア上の問題でもあるが、もう少し表示される位置を補正する等の処理が必要だと考えられる。首振りモードに関しては改善すべき部分が多いと感じた。音声認識が改善され、感嘆詞等も拾うようになればもっとより良いシステムになることが期待できる。
 
 \subsubsection*{共有機能の改善}
-現状ではそれぞれのユーザの三次元座標を合わせるために同じ場所、同じ方向を向いてアプリケーションを起動する必要がある。今後はVuforia等を使用してSharingの接続成功率を上げて、より手間をかけることなく簡単に共有できるようにすることが必要であると考えられる。
+現状のシステムではそれぞれのユーザの三次元座標を合わせるために同じ場所、同じ方向を向いてアプリケーションを起動する必要がある。今後はVuforia等を使用してSharingの接続成功率を上げて、手間をかけることなくより簡単に共有できるようにすることが必要であると考えられる。
 
 \newpage
 \section*{謝辞}
@@ -1235,16 +1249,17 @@ Voice Lineモードについての質問に関しては、番号3.3が平均値3
 \begin{thebibliography}{数字}
   \bibitem{memo} EvernoteやOneNote普及も…メモしない現代人の言い分; \textless\url{https://sirabee.com/2017/12/24/20161413693/}\textgreater2017年12月31日アクセス.
   \bibitem{hassouhou} 7つのアイデア発想フレームワーク; \textless\url{https://creive.me/archives/6722/}\textgreater2017年12月31日アクセス.
+  \bibitem{mr} 田村, 太田: 複合現実感; 情報メディア学会誌Vol.52, No.3, pp.266-272(1998).
   \bibitem{nagata} 長田, 佐々木, 島田, 佐藤: スマートグラスを用いた仮想空間への手書き情報共有システム; 情報処理学会第77 回全国大会論文集, 3-205, 206(2015).
-  \bibitem{Gugenheimer} 	Jan Gugenheimer, Evgeny Stemasov, Julian Frommel and Enrico Rukzio: ShareVR: Enabling Co-Located Experiences for Virtual Reality between HMD and Non-HMD Users; Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp4021-4033(2017).
+  \bibitem{Gugenheimer} 	Jan Gugenheimer, Evgeny Stemasov, Julian Frommel and Enrico Rukzio: ShareVR: Enabling Co-Located Experiences for Virtual Reality between HMD and Non-HMD Users; Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp.4021-4033(2017).
   \bibitem{tano} 高山, 瑞慶山, 田野, 岩田, 橋山: 実世界コンテキスト・情報を用いたユビキタスインフォーマルコミュニケーションの実装と評価; ヒューマンインタフェースシンポジウム2005, pp.955-958(2005).
   \bibitem{tano2} Tano, S., Takayama, T., Iwata, M. and Hashiyama, T.: Wearable Computer for Ubiquitous Informal Communication; Sixth International Workshop on Smart Appliances and Wearable Computing-IWSAWC 2006-(at 26th IEEE International Conference on Distributed Computing Systems
 ICDCS), pp.1-8(2006).
   \bibitem{bonfert} Michael Bonfert, Inga Lehne, Ralf Morawe, Melina Cahnbley, Gabriel Zachmann and Johannes Sch\"oning: Augmented invaders: a mixed reality multiplayer outdoor game; Proceedings of the 23rd ACM Symposium on Virtual Reality Software and Technology Article(VRST '17), No.48(2017).
   \bibitem{siio} 山本, 椎尾: 空気ペン―空間への描画による情報共有―; 情報処理学会全国大会講演論文集, Vol.59, No.4, pp.39-40(1999).
   \bibitem{siio2} 椎尾, 山本: コミュニケーションツールのための簡易型AR システム; コンピュータソフトウェア, Vol.19, No.4, pp.246-253(2002).
-  \bibitem{machuca} Mayra D. Barrera Machuca, Paul Asente, Jingwan Lu, Byungmoon Kim and Wolfgang Stuerzlinger: Multiplanes: Assisted Freehand VR Drawing; Proceeding of Adjunct Publication of the 30th Annual ACM Symposium on User Interface Software and Technology(UIST '17), pp1-3(2017).
-  \bibitem{arora} Rahul Arora, 	Rubaiat Habib Kazi, 	Fraser Anderson, Tovi Grossman, Karan Singh and George Fitzmaurice: Experimental Evaluation of Sketching on Surfaces in VR, Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp5643-5654(2017).
+  \bibitem{machuca} Mayra D. Barrera Machuca, Paul Asente, Jingwan Lu, Byungmoon Kim and Wolfgang Stuerzlinger: Multiplanes: Assisted Freehand VR Drawing; Proceeding of Adjunct Publication of the 30th Annual ACM Symposium on User Interface Software and Technology(UIST '17), pp.1-3(2017).
+  \bibitem{arora} Rahul Arora, 	Rubaiat Habib Kazi, 	Fraser Anderson, Tovi Grossman, Karan Singh and George Fitzmaurice: Experimental Evaluation of Sketching on Surfaces in VR, Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems(CHI '17), pp.5643-5654(2017).
   \bibitem{hololens} Microsoft Inc.: HoloLens; \textless\url{https://www.microsoft.com/ja-jp/hololens}\textgreater2018年1月2日アクセス.
   \bibitem{visualstudio} Microsoft Inc.; Visual Studio 2017: \textless\url{https://docs.microsoft.com/ja-jp/visualstudio/}\textgreater2018年1月27日アクセス.
   \bibitem{unity} Unity Technologies Inc.: Unity;  \textless\url{https://unity3d.com/jp/unity}\textgreater2018年1月27日アクセス.
@@ -1252,10 +1267,11 @@ ICDCS), pp.1-8(2006).
   \bibitem{sharing} HoloToolkit-Unity のSharing の仕組みをできるだけ簡単に理解する; \textless\url{http://qiita.com/miyaura/items/da1d7bd253c3299327ba}\textgreater2018年1月27日アクセス.
   \bibitem{emuniwa} HoloLensで言霊を撃ってみよう;  \textless\url{https://atl-hiroo.recruit-tech.co.jp/showcase/archives/474}\textgreater2018年1月27日アクセス.
   \bibitem{google_speech} Google Inc.: Google Cloud Speech API; \textless\url{https://cloud.google.com/speech/?hl=ja}\textgreater2018年1月27日アクセス.
-  \bibitem{googlesetting} Cloud Speech APIで音声をテキストに変換する; \textless\url{https://codelabs.developers.google.com/codelabs/cloud-speech-intro-ja/index.html?index=..\%2F..\%2Fgcp-next-tok\#0}\textgreater2018年1月28日アクセス
+  \bibitem{googlesetting} Cloud Speech APIで音声をテキストに変換する; \textless\url{https://codelabs.developers.google.com/codelabs/cloud-speech-intro-ja/index.html?index=..\%2F..\%2Fgcp-next-tok\#0}\textgreater2018年1月28日アクセス.
   \bibitem{speechrecognition} Google Cloud Speech Recognition;  \textless\url{https://assetstore.unity.com/packages/tools/integration/google-cloud-speech-recognition-vr-ar-mobile-desktop-72625}\textgreater2018年1月28日アクセス.
   \bibitem{trailrenderer} TrailRenderer; \textless\url{https://docs.unity3d.com/ja/540/ScriptReference/TrailRenderer.html}\textgreater2018年1月28日アクセス.
   \bibitem{linerenderer} LineRenderer; \textless\url{https://docs.unity3d.com/ja/540/ScriptReference/LineRenderer.html}\textgreater2018年1月28日アクセス.
   \bibitem{holograms230} Holograms 230; \textless\url{https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_230}\textgreater2018年1月28日アクセス.
+  \bibitem{vuforia} PTC Inc.: Vuforia; \textless\url{https://developer.vuforia.com/}\textgreater2018年1月28日アクセス.
 \end{thebibliography}
 \end{document}
