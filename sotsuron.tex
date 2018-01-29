@@ -365,13 +365,29 @@ Aroraら\cite{arora}はVR環境で自由にスケッチできる人間の能力�
   \end{center}
 \end{figure}
 
-また、壁上やテーブル上等の平面のところに2Dの文字を残した場合、どうやって表示するかという新たな問題が挙がる。先ほどの空間上に残したメモの場合なら仮想平面をそのまま回転させて相手に向ければよいが、壁等にメモを残した場合は、そのまま回転させてしまうと壁の中に文字が隠れてしまう等の問題が発生する。この問題の解決策としては、壁等に残したメモはそのままにしておき、メモの内容のみを見やすいように自分や相手の目の前に表示するという方法を提案する(図\ref{fig:memo_wall})。
+また、壁上やテーブル上等の平面のところに2Dの文字を残した場合、どうやって表示するかという新たな問題が挙がる。先ほどの空間上に残したメモの場合なら仮想平面をそのまま回転させて相手に向ければよいが、壁等の平面にメモを残した場合は、そのまま回転させてしまうと壁の中に文字が隠れてしまう等の問題が発生する。この問題の解決策としては、壁等の平面に残したメモはそのままにしておき、ある程度横、つまり壁等の平面からの角度が50度未満のところから見たときはメモの内容のみを見やすいように自分や相手の目の前に表示するという方法を提案する(図\ref{fig:memo_wall}, \ref{fig:kakudo})。また、正面、つまり壁等の平面からの角度が50度以上のところから見たときは目の前には表示しない(図\ref{fig:shoumen})。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=8.0cm,width=6.0cm]{./shoumen.eps}
+    \caption{正面から見た場合はそのまま表示}
+    \label{fig:shoumen}
+  \end{center}
+\end{figure}
 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[clip,height=8.0cm,width=6.0cm]{./memo_wall.eps}
-    \caption{壁等に残したメモは自分や相手の目の前に表示}
+    \caption{ある程度横から見た場合は目の前にも表示}
     \label{fig:memo_wall}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[clip,height=4.0cm,width=7.0cm]{./kakudo.eps}
+    \caption{角度}
+    \label{fig:kakudo}
   \end{center}
 \end{figure}
 

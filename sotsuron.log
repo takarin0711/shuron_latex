@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  29 JAN 2018 23:50
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  30 JAN 2018 03:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -641,104 +641,108 @@ File: ./memo_kaiten.eps Graphic file (type eps)
 [19]
 File: ./memo_ten.eps Graphic file (type eps)
  <./memo_ten.eps>
+File: ./shoumen.eps Graphic file (type eps)
+ <./shoumen.eps> [20]
 File: ./memo_wall.eps Graphic file (type eps)
- <./memo_wall.eps> [20]
+ <./memo_wall.eps>
+File: ./kakudo.eps Graphic file (type eps)
+ <./kakudo.eps>
+[21]
 File: ./speak_3d.eps Graphic file (type eps)
  <./speak_3d.eps>
 File: ./text_memo.eps Graphic file (type eps)
-
-<./text_memo.eps> [21]
+ <./text_memo.eps> [22]
 File: ./text_memo2.eps Graphic file (type eps)
  <./text_memo2.eps>
 File: ./moji_douteki.eps Graphic file (type eps)
- <./moji_douteki.eps> [22]
+
+<./moji_douteki.eps> [23]
 File: ./moji_seiteki.eps Graphic file (type eps)
-
-<./moji_seiteki.eps>
+ <./moji_seiteki.eps>
 File: ./kantanshi.eps Graphic file (type eps)
- <./kantanshi.eps> [23]
+ <./kantanshi.eps> [24]
 File: ./room_shukusho.eps Graphic file (type eps)
- <./room_shukusho.eps> [24]
-File: ./shukusho_temoto.eps Graphic file (type eps)
 
-<./shukusho_temoto.eps>
+<./room_shukusho.eps> [25]
+File: ./shukusho_temoto.eps Graphic file (type eps)
+ <./shukusho_temoto.eps>
 File: ./3d_rubber_band.eps Graphic file (type eps)
- <./3d_rubber_band.eps> [25]
+ <./3d_rubber_band.eps>
+[26]
 File: ./3d_rubber_band2.eps Graphic file (type eps)
  <./3d_rubber_band2.eps>
 File: ./3d_rubber_band3.eps Graphic file (type eps)
-
-<./3d_rubber_band3.eps>
+ <./3d_rubber_band3.eps>
 File: ./3d_rubber_band4.eps Graphic file (type eps)
- <./3d_rubber_band4.eps> [26]
+ <./3d_rubber_band4.eps>
+[27]
 File: ./3d_fishing.eps Graphic file (type eps)
  <./3d_fishing.eps>
 File: ./3d_fishing2.eps Graphic file (type eps)
-
-<./3d_fishing2.eps> [27]
+ <./3d_fishing2.eps> [28]
 File: ./3d_fishing3.eps Graphic file (type eps)
  <./3d_fishing3.eps>
 File: ./3d_fishing4.eps Graphic file (type eps)
- <./3d_fishing4.eps> [28]
-File: ./sharing_taimen.eps Graphic file (type eps)
 
-<./sharing_taimen.eps>
+<./3d_fishing4.eps> [29]
+File: ./sharing_taimen.eps Graphic file (type eps)
+ <./sharing_taimen.eps>
 File: ./sharing_taimen2.eps Graphic file (type eps)
- <./sharing_taimen2.eps> [29]
-File: ./sharing_enkaku.eps Graphic file (type eps)
- <./sharing_enkaku.eps>
+ <./sharing_taimen2.eps>
 [30]
+File: ./sharing_enkaku.eps Graphic file (type eps)
+ <./sharing_enkaku.eps> [31]
 File: ./prototypesystem.eps Graphic file (type eps)
  <./prototypesystem.eps>
 File: ./sharing.eps Graphic file (type eps)
- <./sharing.eps> [31]
+ <./sharing.eps>
+[32]
 File: ./toolbar.eps Graphic file (type eps)
  <./toolbar.eps>
 File: ./sharingservice.eps Graphic file (type eps)
-
-<./sharingservice.eps> [32]
+ <./sharingservice.eps> [33]
 File: ./sharingstage.eps Graphic file (type eps)
  <./sharingstage.eps>
 File: ./googlespeech.eps Graphic file (type eps)
- <./googlespeech.eps> [33]
-File: ./apikey.eps Graphic file (type eps)
 
-<./apikey.eps> [34]
+<./googlespeech.eps> [34]
+File: ./apikey.eps Graphic file (type eps)
+ <./apikey.eps> [35]
 File: ./scenelauncher.eps Graphic file (type eps)
  <./scenelauncher.eps>
 File: ./senizu.eps Graphic file (type eps)
- <./senizu.eps> [35]
+
+<./senizu.eps> [36]
 File: ./3ddraw.eps Graphic file (type eps)
- <./3ddraw.eps>
-[36]
+ <./3ddraw.eps> [37]
 File: ./hukidashi.eps Graphic file (type eps)
  <./hukidashi.eps>
 File: ./sticky_input.eps Graphic file (type eps)
  <./sticky_input.eps>
 File: ./sticky_share.eps Graphic file (type eps)
- <./sticky_share.eps> [37]
+
+<./sticky_share.eps> [38]
 File: ./wall_mae.eps Graphic file (type eps)
-
-<./wall_mae.eps>
+ <./wall_mae.eps>
 File: ./wall_yoko.eps Graphic file (type eps)
- <./wall_yoko.eps> [38]
+ <./wall_yoko.eps> [39]
 File: ./voice_line.eps Graphic file (type eps)
- <./voice_line.eps> [39]
-File: ./interjection.eps Graphic file (type eps)
 
-<./interjection.eps> [40]
+<./voice_line.eps> [40]
+File: ./interjection.eps Graphic file (type eps)
+ <./interjection.eps> [41]
 File: ./jikken_kankyo.eps Graphic file (type eps)
  <./jikken_kankyo.eps>
 File: ./jikkenchu.eps Graphic file (type eps)
- <./jikkenchu.eps> [41]
-File: ./hoshi.eps Graphic file (type eps)
 
-<./hoshi.eps> [42]
+<./jikkenchu.eps> [42]
+File: ./hoshi.eps Graphic file (type eps)
+ <./hoshi.eps> [43]
 File: task1.eps Graphic file (type eps)
  <task1.eps>
 File: task2.eps Graphic file (type eps)
  <task2.eps>
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 837--851
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 853--867
 []$[]$ $[]$ 
  []
 
@@ -746,38 +750,38 @@ File: task2_2.eps Graphic file (type eps)
 <task2_2.eps>
 File: task3.eps Graphic file (type eps)
  <task3.eps>
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 854--868
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 870--884
 []$[]$ $[]$ 
  []
 
 File: ./task4.eps Graphic file (type eps)
-<./task4.eps> [43] [44] [45]
+<./task4.eps> [44] [45] [46]
 File: ./task5.eps Graphic file (type eps)
- <./task5.eps> [46] [47]
+ <./task5.eps> [47] [48]
 File: ./draw_maru.eps Graphic file (type eps)
- <./draw_maru.eps> [48]
+ <./draw_maru.eps> [49]
 File: ./draw_star.eps Graphic file (type eps)
 
 <./draw_star.eps>
 File: ./okane.eps Graphic file (type eps)
- <./okane.eps> [49]
+ <./okane.eps> [50]
 File: ./stone.eps Graphic file (type eps)
  <./stone.eps>
 File: ./takaoka.eps Graphic file (type eps)
- <./takaoka.eps> [50]
+ <./takaoka.eps> [51]
 File: ./rakka.eps Graphic file (type eps)
 
-<./rakka.eps> [51]
+<./rakka.eps> [52]
 File: ./theworld.eps Graphic file (type eps)
  <./theworld.eps>
 File: ./zetubou.eps Graphic file (type eps)
- <./zetubou.eps> [52]
+ <./zetubou.eps> [53]
 File: ./gion.eps Graphic file (type eps)
  <./gion.eps>
 File: ./akarui.eps Graphic file (type eps)
 
-<./akarui.eps> [53] [54] [55]
-Overfull \hbox (60.82709pt too wide) in paragraph at lines 1116--1173
+<./akarui.eps> [54] [55] [56]
+Overfull \hbox (60.82709pt too wide) in paragraph at lines 1132--1189
  [] 
  []
 
@@ -785,75 +789,75 @@ Overfull \hbox (60.82709pt too wide) in paragraph at lines 1116--1173
 Overfull \vbox (16.55981pt too high) has occurred while \output is active []
 
 
-[56] [57] [58] [59] [60]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 1250
+[57] [58] [59] [60] [61]
+LaTeX Font Info:    Try loading font information for OML+txr on input line 1266
 .
 
 (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1250
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1266
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1265
+Underfull \hbox (badness 10000) in paragraph at lines 1280--1281
 []\OT1/txr/m/n/10.95 Microsoft Inc.; Vi-sual Stu-dio 2017: \OML/txmi/m/it/10.95
  <$\OT1/txtt/m/n/10.95 https : / / docs . microsoft . com / ja-[]jp /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1266--1267
+Underfull \hbox (badness 10000) in paragraph at lines 1282--1283
 []\OT1/txr/m/n/10.95 Microsoft Inc: HoloToolkit-Unity; \OML/txmi/m/it/10.95 <$\
 OT1/txtt/m/n/10.95 https : / / github . com / Microsoft /
  []
 
-[61]
-Underfull \hbox (badness 2512) in paragraph at lines 1268--1269
+[62]
+Underfull \hbox (badness 2512) in paragraph at lines 1284--1285
 []\OT1/txr/m/n/10.95 HoloLens \JY1/hmc/m/n/10.95 で言霊を撃 ってみよう\OT1/txr/
 m/n/10.95 ; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 https : / / atl-[]hiroo 
 . recruit-[]tech . co . jp / showcase /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1287
 \OT1/txtt/m/n/10.95 com / codelabs / cloud-[]speech-[]intro-[]ja / index . html
  ? index = . . \ % 2F . . \ %2Fgcp-[]next-[]tok \
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 1271--1272
+Underfull \hbox (badness 7944) in paragraph at lines 1287--1288
 []\OT1/txr/m/n/10.95 Google Cloud Speech Recog-ni-tion; \OML/txmi/m/it/10.95 <$
 \OT1/txtt/m/n/10.95 https : / / assetstore . unity . com / packages / tools /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1273
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
 []\OT1/txr/m/n/10.95 TrailRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / docs . unity3d . com / ja / 540 / ScriptReference / TrailRenderer .
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1273--1274
+Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
 []\OT1/txr/m/n/10.95 LineRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 h
 ttps : / / docs . unity3d . com / ja / 540 / ScriptReference / LineRenderer .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1275
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
 []\OT1/txr/m/n/10.95 Holograms 230; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / developer . microsoft . com / en-[]us / windows / mixed-[]reality /
 
  []
 
-[62] (./sotsuron.aux) ) 
+[63] (./sotsuron.aux) ) 
 Here is how much of TeX's memory you used:
- 7634 strings out of 494001
- 105474 string characters out of 6157278
+ 7640 strings out of 494001
+ 105545 string characters out of 6157278
  181173 words of memory out of 5000000
- 10853 multiletter control sequences out of 15000+600000
+ 10857 multiletter control sequences out of 15000+600000
  28716 words of font info for 102 fonts, out of 8000000 for 9000
  745 hyphenation exceptions out of 8191
  42i,12n,40p,1222b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (63 pages, 207516 bytes).
+Output written on sotsuron.dvi (64 pages, 209452 bytes).
