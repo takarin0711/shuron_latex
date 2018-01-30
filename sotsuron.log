@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.1.6)  30 JAN 2018 03:30
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.sjis) (TeX Live 2013/W32TeX) (format=platex 2017.7.9)  30 JAN 2018 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -275,15 +275,15 @@ LaTeX Info: Redefining \not on input line 1043.
 \lst@maxwidth=\dimen141
 
 (c:/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box53
 )
 (c:/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
 (c:/texlive/2013/texmf-dist/tex/latex/listings/jlisting.sty
 Package: jlisting 2006/02/20 0.2 (Thor)
@@ -781,7 +781,7 @@ File: ./gion.eps Graphic file (type eps)
 File: ./akarui.eps Graphic file (type eps)
 
 <./akarui.eps> [54] [55] [56]
-Overfull \hbox (60.82709pt too wide) in paragraph at lines 1132--1189
+Overfull \hbox (60.82709pt too wide) in paragraph at lines 1136--1193
  [] 
  []
 
@@ -790,61 +790,61 @@ Overfull \vbox (16.55981pt too high) has occurred while \output is active []
 
 
 [57] [58] [59] [60] [61]
-LaTeX Font Info:    Try loading font information for OML+txr on input line 1266
+LaTeX Font Info:    Try loading font information for OML+txr on input line 1270
 .
 
 (c:/texlive/2013/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1266
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 1270
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 1280--1281
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1285
 []\OT1/txr/m/n/10.95 Microsoft Inc.; Vi-sual Stu-dio 2017: \OML/txmi/m/it/10.95
  <$\OT1/txtt/m/n/10.95 https : / / docs . microsoft . com / ja-[]jp /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1282--1283
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1287
 []\OT1/txr/m/n/10.95 Microsoft Inc: HoloToolkit-Unity; \OML/txmi/m/it/10.95 <$\
 OT1/txtt/m/n/10.95 https : / / github . com / Microsoft /
  []
 
 [62]
-Underfull \hbox (badness 2512) in paragraph at lines 1284--1285
+Underfull \hbox (badness 2512) in paragraph at lines 1288--1289
 []\OT1/txr/m/n/10.95 HoloLens \JY1/hmc/m/n/10.95 で言霊を撃 ってみよう\OT1/txr/
 m/n/10.95 ; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 https : / / atl-[]hiroo 
 . recruit-[]tech . co . jp / showcase /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1287
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
 \OT1/txtt/m/n/10.95 com / codelabs / cloud-[]speech-[]intro-[]ja / index . html
  ? index = . . \ % 2F . . \ %2Fgcp-[]next-[]tok \
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 1287--1288
+Underfull \hbox (badness 7944) in paragraph at lines 1291--1292
 []\OT1/txr/m/n/10.95 Google Cloud Speech Recog-ni-tion; \OML/txmi/m/it/10.95 <$
 \OT1/txtt/m/n/10.95 https : / / assetstore . unity . com / packages / tools /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1293
 []\OT1/txr/m/n/10.95 TrailRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / docs . unity3d . com / ja / 540 / ScriptReference / TrailRenderer .
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1294
 []\OT1/txr/m/n/10.95 LineRenderer; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 h
 ttps : / / docs . unity3d . com / ja / 540 / ScriptReference / LineRenderer .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1295
 []\OT1/txr/m/n/10.95 Holograms 230; \OML/txmi/m/it/10.95 <$\OT1/txtt/m/n/10.95 
 https : / / developer . microsoft . com / en-[]us / windows / mixed-[]reality /
 
@@ -854,10 +854,10 @@ https : / / developer . microsoft . com / en-[]us / windows / mixed-[]reality /
 Here is how much of TeX's memory you used:
  7640 strings out of 494001
  105545 string characters out of 6157278
- 181173 words of memory out of 5000000
+ 182184 words of memory out of 5000000
  10857 multiletter control sequences out of 15000+600000
  28716 words of font info for 102 fonts, out of 8000000 for 9000
  745 hyphenation exceptions out of 8191
  42i,12n,40p,1222b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotsuron.dvi (64 pages, 209452 bytes).
+Output written on sotsuron.dvi (64 pages, 210908 bytes).

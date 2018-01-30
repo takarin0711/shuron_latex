@@ -24,8 +24,8 @@
 \contentsline {subsubsection}{\numberline {4.3.1}近くにあるメモを操作}{25}
 \contentsline {subsubsection}{\numberline {4.3.2}遠くにあるメモを操作}{25}
 \contentsline {subsection}{\numberline {4.4}メモを共有}{30}
-\contentsline {subsubsection}{\numberline {4.4.1}対面にいる相手にメモを共有}{30}
-\contentsline {subsubsection}{\numberline {4.4.2}遠隔にいる相手にメモを共有}{31}
+\contentsline {subsubsection}{\numberline {4.4.1}対面にいる相手とメモを共有}{30}
+\contentsline {subsubsection}{\numberline {4.4.2}遠隔にいる相手とメモを共有}{31}
 \contentsline {section}{\numberline {5}プロトタイプシステムの実装}{32}
 \contentsline {subsection}{\numberline {5.1}プロトタイプシステムの構成}{32}
 \contentsline {subsubsection}{\numberline {5.1.1}アプリケーション}{32}
@@ -46,6 +46,9 @@
 \contentsline {subsubsection}{\numberline {6.4.2}シナリオ実験}{44}
 \contentsline {subsubsection}{\numberline {6.4.3}課題解決実験}{47}
 \contentsline {subsection}{\numberline {6.5}実験結果と考察}{48}
+\contentsline {subsubsection}{\numberline {6.5.1}シナリオ実験の結果}{48}
+\contentsline {subsubsection}{\numberline {6.5.2}課題解決実験の結果}{49}
+\contentsline {subsubsection}{\numberline {6.5.3}アンケートの結果}{55}
 \contentsline {section}{\numberline {7}おわりに}{59}
 \contentsline {subsection}{\numberline {7.1}本研究のまとめ}{59}
 \contentsline {subsection}{\numberline {7.2}今後の課題}{59}
